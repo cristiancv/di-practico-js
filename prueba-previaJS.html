@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba Previa antes del práctico de JS de platzi</title>
+</head>
+
+<body>
+  <h1>Prueba Previa y desarrollo</h1> <br>
+  <h2>Variables y operaciones</h2>
+  <hr>
+  </br>
+  <ol>
+    <li>Responde las siguientes preguntas en la sección de comentarios: </li></br>
+    <ul>
+      <li>¿Qué es una variable y para qué sirve?
+        <span>Es un lugar o espacio en memoria el que me permitirá almacenar un dato o valor, este sirve para utilizarlo
+          posteriormente en un cálculo u operación indicada en las intrucciones de código que utilicen dicha
+          variable.</span>
+      </li></br>
+      <li>¿Cuál es la diferencia entre declarar e inicializar una variable?
+        <span>
+          Al declarar una variable lo que se hace simplemente es darle un nombre e indicar el tipo de dicha variable,
+          mientras que
+          inicializarla es asignarle el dato que va a almacenar.
+        </span>
+      </li></br>
+      <li>¿Cuál es la diferencia entre sumar números y concatenar strings?
+        <span>Sumar números es realizar la adición o suma de al menos dos números dados. Concatenar strings es tomar una
+          cadena de texto,
+          y a ésta agregarle el contenido de texto de otra cadena, esto genera una nueva cadena cuyo contenido equivale
+          a
+          la
+          unión del texto de la primera cadena y de la segunda cadena al final.
+        </span>
+      </li></br>
+      <li>¿Cuál operador me permite sumar o concatenar?
+        <span>El operador que me permite sumar o concatenar es el "+" y la tarea depende del tipo de datos de cada
+          variable.
+        </span>
+      </li></br>
+    </ul></br>
+    <li>Determina el nombre y tipo de dato para almacenar en variables la siguiente información:</li></br>
+    <ul>
+      <li>Nombre</br>
+        <span>String nombre</span>
+      </li>
+      <li>Apellido</br>
+        <span>String apellido</span>
+      </li>
+      <li>Nombre de usuario en Platzi</br>
+        <span>String usuario</span>
+      </li>
+      <li>Edad</br>
+        <span>integer edad</span>
+      </li>
+      <li>Correo electrónico</br>
+        <span>String correo</span>
+      </li>
+      <li>Mayor de edad</br>
+        <span>Boolean edad</span>
+      </li>
+      <li>Dinero ahorrado</br>
+        <span>integer ahorrado</span>
+      </li>
+      <li>Deudas</br>
+        <span>integer deudas</span>
+      </li>
+    </ul></br>
+    <li>Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.</li></br>
+    <code>
+    <pre>
+      let nombre = "Cristian",
+      apellido = "Cuesta";
+      const usuario = "usuariocv"
+      let edad = 38;
+      var correo = "micorreo@msn.com";
+      let mayorEdad = true,
+      ahorrado = 500;
+      let deudas = 100;
+    </pre>
+  </code>
+    </br>
+    <li>Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:<br>
+      <ul>
+        <li>Nombre completo (nombre y apellido)</li><br>
+        <li>Dinero real (dinero ahorrado menos deudas)
+        </li>
+        <script>
+          let nombre = "Cristian",
+            apellido = "Cuesta";
+          const usuario = "usuariocv";
+          let edad = 38;
+          var correo = "micorreo@msn.com";
+          let mayorEdad = true,
+            ahorrado = 500;
+          let deudas = 100;
+          console.log(`Nombre completo: ${nombre} ${apellido}`)
+          console.log(`Dinero real: ${ahorrado - deudas}`)
+        </script>
+      </ul>
+    </li>
+  </ol><br><br>
+  <h2>Funciones.</h2>
+  <ol>
+    <li>Responde las siguientes preguntas en la sección de comentarios:</li><br>
+    <ul>
+      <li>¿Qué es una función?</li>
+      <p>Una función es un bloque de sentencias de código cuya finalidad es realizar una tarea que puede o no ser
+        repetitiva, por lo general estás devuelven un valor. </p>
+      <li>¿Cuándo me sirve usar una función en mi código?</li><br>
+      <p>Una función es útil cuando debo realizar un proceso u operación previamente definida en un bloque de código,
+        entonces mediante las llamadas a esta función puedo reutilizarla las veces que sean necesarias.</p>
+      <li>¿Cuál es la diferencia entre parámetros y argumentos de una función?</li> <br>
+      <p>Parámetros son las variables definidas dentro del ámbito de recepción de una función; en cambio argumentos son
+        los valores
+        que dichos parámetros van a tomar al momento de hacer la llamada a dicha función</p>
+    </ul><br>
+    <li>Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por
+      parámetros y argumentos en una función:</li>
+    <code>
+        <pre>
+          const name = "Juan David";
+          const lastname = "Castro Gallego";
+          const completeName = name + lastname;
+          const nickname = "juandc";
+          console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+        </pre>
+      </code>
+    <script>
+      const funciones2 = (name = "Juan David", lastname = "Castro Gallego", nickname = "juandc") => {
+        let completename = name + " " + lastname;
+        console.log(`Mi nombre es: ${completename}, pero prefiero que me digas "${nickname}`)
+      }
+      funciones2();
+    </script>
+  </ol>
+  <h2>Condicionales</h2>
+  <ol>
+    <li>Responde las siguientes preguntas en la sección de comentarios:<br>
+      <ul>
+        <li>¿Qué es una condicional?</li>
+        <p>Es una sentencia de código que al evaluarse como verdadera permite la ejecución de cierto bloque de código,
+          este bloque de código se encuentra delimitado por el ámbito especificado por la condicional. </p>
+        <li>¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?.</li> <br>
+        <p>Unario: como el de negación, este cambia el valor de verdad de una variable o una expresión.</p>
+        <p>Relacional u operacional: Compara el valor de dos variables o expresiones determinando como verdadero o falso
+          la expresión indicada en la condición.</p>
+        <p>De bloque: Definen un ámbito o bloque de código donde se utilizan los operadores unarios y/o relacionales
+          tenemos el if(), si una condición es evaluada como verdadera se ejecuta las líneas de código escritas en su
+          ámbito, en caso de ser falsa, ignora el bloque de sentencias del if, y pasa a la siguiente línea fuera de este
+          if.<br>
+          if, else; o if, else if: En Ambas se da la posibilidad de ejecutar una sección del bloque de código cuanda la
+          condición ha sido evaluada como falsa, ésta es la sección del caso contrario; la diferencia es que la primera
+          se ejecuta de forma inclusiva y la segunda se ejecuta de forma excluyente.</p>
+        <p>Ternario: Es similar al if else, y es muy útil cuando la operación a realizar devuelve un valor booleano,
+          entonces cuando la respuesta es verdadera, se ejecutara la línea de código indicada o si es falsa la línea
+          correspondiente.</p>
+        <li>¿Puedo combinar funciones y condicionales?</li>
+        <p>Si, si es posible.</p>
+      </ul>
+    </li>
+    <li>Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:</li>
+    <code>
+      <pre>
+        const tipoDeSuscripcion = "Basic";
+        
+        switch (tipoDeSuscripcion) {
+        case "Free":
+        console.log("Solo puedes tomar los cursos gratis");
+        break;
+        case "Basic":
+        console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+        break;
+        case "Expert":
+        console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+        break;
+        case "ExpertPlus":
+        console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+        break;
+        }
+      </pre>
+    </code>
+    <script>
+      //Primera parte switch
+      const tipoDeSuscripcion = "Basic";
+      switch (tipoDeSuscripcion) {
+        case "Free":
+          console.log("Solo puedes tomar los cursos gratis");
+          break;
+        case "Basic":
+          console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+          break;
+        case "Expert":
+          console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+          break;
+        case "ExpertPlus":
+          console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+          break;
+      }
+      // Opcion if else
+      const tipoDeSuscripcion = "Basic";
+      if (tipoDeSuscripcion === "Free") {
+        console.log("Solo puedes tomar los cursos gratis");
+      } else {
+        if (tipoDeSuscripcion === "Basic") {
+          console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+        }
+        if (tipoDeSuscripcion === "Expert") {
+          console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+        }
+        if (tipoDeSuscripcion === "ExpertPlus") {
+          console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+        }
+        tipoDeSuscripcion = "Expert";
+      }
+      // Opcion if else if
+      const tipoDeSuscripcion = "Basic";
+      if (tipoDeSuscripcion === "Free") {
+        console.log("Solo puedes tomar los cursos gratis");
+      }
+      else if (tipoDeSuscripcion === "Basic") {
+        console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+      }
+      else if (tipoDeSuscripcion === "Expert") {
+        console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+      }
+      else if (tipoDeSuscripcion === "ExpertPlus") {
+        console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+      }
+    </script>
+    <li>Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni
+      else
+      if).</li><br><br>
+    <p></p>
+  </ol>
+</body>
+
+</html>
