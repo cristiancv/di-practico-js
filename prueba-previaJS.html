@@ -359,7 +359,45 @@
       const imprimirPrimerElemento = arreglo => console.log(arreglo[0]);
       imprimirPrimerElemento(["elemento 1", 2, true, 4, 5]);
     </script>
-    <li></li>
+    <pre>
+        <code>
+          const imprimirPrimerElemento = arreglo => console.log(arreglo[0]);
+          imprimirPrimerElemento(["elemento 1", 2, true, 4, 5]);
+        </code>
+      </pre>
+    <li>
+      Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se
+      vale
+      imprimir el array completo).
+      <script>
+        const imprimirArregloElementos = arreglo1 => {
+          for (let i = 0; i < arreglo1.lenght; i++) {
+            console.log(arreglo[i]);
+          }
+        }
+        imprimirArregloElementos(["elemento 1", 2, true, 4, 5]);
+      </script>
+      <pre>
+                <code>
+                  const imprimirArregloElementos = arreglo1 => {
+                    for (let i=0; i<arreglo1.lenght; i++){
+                      console.log(arreglo[i]);
+                    }
+                  }
+                  imprimirArregloElementos(["elemento 1", 2, true, 4, 5]);
+                </code>
+            </pre>
+    </li>
+    <li>
+      Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no
+      se vale
+      imprimir el objeto completo).
+
+      <script>
+        const imprimeElementos = obj => console.log(arreglo[0]);
+        imprimirPrimerElemento(["elemento 1", 2, true, 4, 5]);
+      </script>
+    </li>
     <li></li>
   </ol>
 </body>
