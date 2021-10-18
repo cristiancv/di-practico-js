@@ -1,0 +1,175 @@
+  161  git init
+  165  git status
+  166  git add .
+  167  git add *
+  168  git status
+  169  git commit -m "Primera subida de prueba 0"
+  170  git status
+  171  git tag -l
+  172  git status -s
+  173  git status
+  174  git status -s
+  175  git tag -l
+  176  git status
+  177  git tag
+  178  git tag --help
+  179  git help
+  180  git log
+  182  git help
+  183  git tag help
+  185  git help tag
+  186  git status
+  187  git commit help
+  188  git help commit
+  189  git commit -a -m "Primera subida de prueba 0"
+  190  git status -s
+  191  git status
+  192  git commit -a
+  193  git config --global user.email "cristiancv100@gmail.com"
+  194  git config --global user.name "Cristian Cuesta"
+  195  git commit -a -m "Primera subida de prueba 0"
+  196  git status -s
+  197  git status
+  199  git status
+  200  git status -s
+  201  git log
+  202  git log -l
+  203  git ta -l
+  204  git tag -l
+  205  git log
+  206  git help tag
+  207  git tag 797e -m "primera subida tag 0.0"
+  208  git log
+  209  git status -a
+  210  git status -s
+  211  git status -s
+  212  git tag -l
+  213  git status
+  214  git log
+  215  git tag -l
+  219  git status -s
+  220  git add README
+  221  git log
+  222  git status -s
+  223  git status
+  229  git status
+  230  git diff
+  232  git diff
+  233  git log
+  234  git tag -l
+  236  git diff
+  239  git diff
+  240  git status
+  241  git add README
+  242  git status
+  243  git status -S
+  244  git status -s
+  245  git diff HEAD
+  248  git diff HEAD
+  249  git status -s
+  250  git status -s
+  251  git diff -stat
+  252  git diff --stat
+  253  git status 
+  254  git commit -m 'Agregado el archivo README'
+  255  git status 
+  256  git log
+  257  git status
+  258  git stash list
+  273  git remote -v
+  274  git remote add origin git@gitlab.com:henryc2v/di-practico-js.git
+  275  git status
+  276  git add
+  277  git add .
+  278  git status
+  279  git commit -m "Inicial comit en la nube"
+  280  git push -uf origin master
+  281  git status -s
+  282  git log
+  283  git log -a
+  284  git status -s
+  285  git fetch origin
+  286  git checkout -b "master" "origin/master"
+  287  git push -f origin master
+  288  git status
+  289  git status log
+  290  git log
+  300  git log
+  302  git push -uf origin master
+  304  git remote add origin https://gitlab.com/henryc2v/di-practico-js.git
+  305  git branch -M main
+  306  git push -uf origin main
+  345  history |grep git
+  346  git status
+  347  git add -A
+  348  git status
+  349  git commit -m "Agregada carpeta pruebas"
+  350  git push -uf origin master
+  351  git push -uf origin main
+  352  git push -uf origin master
+  353  git push -uf origin main
+  399  git status
+  400  git log
+  408  git status
+  420  git log --status
+  421  git log -status
+  422  git -status
+  423  git status
+  424  git log --oneline
+  425  git log
+  426  git branch learning
+  427  git branch -l
+  428  git tag -l
+  429  git status -log
+  430  git status
+  431  git status -A
+  432  git status -S
+  433  git status
+  434  git log -l
+  435  git log
+  436  git log --oneline
+  437  git tag
+  438  git log
+  439  git
+  440  git show config
+  441  git show --help
+  442  git checkout learning
+  443  git log --oneline
+  444  git log
+  445  git status -s
+  446  git checkout main
+  447  git status -s
+  448  git status -S
+  449  git status
+  450  git checkout master
+  451  git branch -l
+  452  git checkout -b master
+  453  git status
+  454  git checkout -b main
+  455  git checkout main
+  456  git status
+  458  git stash
+  460  history |grep git
+  472  git push --help
+  475  git log --stat
+  476  git checkout learning
+  477  git log --stat
+  478  git log --stat
+  479  git checkout main
+  480  git checkout learning
+  481  git checkout main
+  482  git checkout main
+  483  git branch -l
+  484  git log
+  485  git log --stat
+  487  git log --stat
+  488  git reflog
+  490  git log
+  491  git checkout learning
+  492  git log
+  493  git cherry-pick 1eec7d9df5e339220e642a1ed0d9465ad5e86c2b
+  494  git log
+  495  git log
+  497  git log
+  499  git push -uf origin learning
+  501  history |grep git > gitcomandos2.txt
