@@ -234,7 +234,133 @@
     <li>Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni
       else
       if).</li><br><br>
-    <p></p>
+    <code>
+      <pre>
+        const tipoDeSuscripcion = "Basic";
+        if (tipoDeSuscripcion === "Free") {
+        console.log("Solo puedes tomar los cursos gratis");
+        }
+        if (tipoDeSuscripcion === "Basic") {
+        console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+        }
+        if (tipoDeSuscripcion === "Expert") {
+        console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+        }
+        if (tipoDeSuscripcion === "ExpertPlus") {
+        console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+        }
+      </pre>
+    </code>
+    <script>
+      const tipoDeSuscripcion = "Basic";
+      if (tipoDeSuscripcion === "Free") {
+        console.log("Solo puedes tomar los cursos gratis");
+      }
+      if (tipoDeSuscripcion === "Basic") {
+        console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+      }
+      if (tipoDeSuscripcion === "Expert") {
+        console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+      }
+      if (tipoDeSuscripcion === "ExpertPlus") {
+        console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+      }
+    </script>
+  </ol>
+  <h4>Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento
+    con
+    arrays y un solo condicional. 😏</h4>
+  <h2>Ciclos</h2>
+  <hr><br>
+  <ol>
+    <li>Responde las siguientes preguntas en la sección de comentarios:
+      <ul>
+        <li>¿Qué es un ciclo?</li>
+        <p>Es un bloque de sentencias de código que se repetiran n veces siempre y cuando la condición dada se cumpla
+          como verdadera.</p>
+        <li>¿Qué tipos de ciclos existen en JavaScript?</li>
+        <p>Existen: for, while, do while, para colecciones el for of y for in</p>
+        <li>¿Qué es un ciclo infinito y por qué es un problema?</li>
+        <p>Es un ciclo cuyo código de ejecuta indefinidamente, es un problema ya que llega a consumir toda la memoria
+          principal del computador, obligando así a detener su ejecución de manera forzada.</p>
+        <li>¿Puedo mezclar ciclos y condicionales?</li>
+        <p>Si es posible según se requiera.</p>
+      </ul>
+    </li>
+    <li>Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:</li>
+    <code>
+        <pre>
+          for (let i = 0; i < 5; i++) { console.log("El valor de i es: " + i);
+          }
+        </pre>
+      </code>
+    <code>
+        <pre>
+          Respuesta:
+          let i=0;
+          while (i < 5) {
+            console.log("El valor de i es: " + i);
+            i++;
+          }
+        </pre>
+      </code>
+    <code>
+        <pre>
+          for (let i = 10; i >= 2; i--) {
+          console.log("El valor de i es: " + i);
+          }
+        </pre>
+      </code>
+    <code>
+        <pre>
+          Respuesta:
+          let i = 10;
+          while(i > 2 ){
+            console.log("El valor de i es: " + i);
+            i--;
+          }
+        </pre>
+      </code>
+    <li>Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un
+      mensaje
+      de felicitaciones, pero si responden mal, volvemos a empezar.</li>
+    <p>Pista: puedes usar la función prompt de JavaScript.</p>
+    <script>
+      let suma = 0;
+      while (suma !== 4) {
+        suma = parseInt(prompt("¿Cuánto es 2 + 2 ?"));
+        if (suma === 4) {
+          alert(`Felicitaciones respuesta correcta!`);
+        }
+      }
+    </script>
+  </ol>
+  <h2>Listas</h2>
+  <hr><br>
+  <ol>
+    <li>
+      Responde las siguientes preguntas en la sección de comentarios:
+      <ul>
+        <li>¿Qué es un array?</li>
+        <p>Un Arreglo o array es una colección de elementos que pueden ser o no datos del mismo tipo, dependiendo del
+          lenguaje de programación.</p>
+        <li>¿Qué es un objeto?</li>
+        <p>Es la representación de una entidad la cuál posee una cantidad de atributos o propiedades y metodos o
+          funciones propias.</p>
+        <li>¿Cuándo es mejor usar objetos o arrays?</li>
+        <p>Es mejor usar objetos cuando se maneja un conjunto de propiedades, y el array cuando se requiere utilizar una
+          colección de elementos.</p>
+        <li>¿Puedo mezclar arrays con objetos o incluso objetos con arrays?</li>
+        <p>Si ya que tanto uno puede contener al otro y viceversa.</p>
+      </ul>
+    </li>
+    <li>Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.</li>
+    <script>
+      const imprimirPrimerElemento = arreglo => console.log(arreglo[0]);
+      imprimirPrimerElemento(["elemento 1", 2, true, 4, 5]);
+    </script>
+    <li></li>
+    <li></li>
   </ol>
 </body>
 
