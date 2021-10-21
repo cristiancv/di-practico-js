@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prueba Previa antes del práctico de JS de platzi</title>
+  <link rel="stylesheet" href="./css/prueba0.css">
 </head>
 
 <body>
   <h1>Prueba Previa y desarrollo</h1> <br>
-  <h2>Variables y operaciones</h2>
+  <h2 class="titulo2" id="variables_y_operaciones">Variables y operaciones</h2>
   <hr>
   </br>
-  <ol>
+  <ol class="variables operaciones">
     <li>Responde las siguientes preguntas en la sección de comentarios: </li></br>
     <ul>
       <li>¿Qué es una variable y para qué sirve?
@@ -23,17 +24,13 @@
       <li>¿Cuál es la diferencia entre declarar e inicializar una variable?
         <span>
           Al declarar una variable lo que se hace simplemente es darle un nombre e indicar el tipo de dicha variable,
-          mientras que
-          inicializarla es asignarle el dato que va a almacenar.
+          mientras que inicializarla es asignarle el dato que va a almacenar.
         </span>
       </li></br>
       <li>¿Cuál es la diferencia entre sumar números y concatenar strings?
         <span>Sumar números es realizar la adición o suma de al menos dos números dados. Concatenar strings es tomar una
-          cadena de texto,
-          y a ésta agregarle el contenido de texto de otra cadena, esto genera una nueva cadena cuyo contenido equivale
-          a
-          la
-          unión del texto de la primera cadena y de la segunda cadena al final.
+          cadena de texto, y a ésta agregarle el contenido de texto de otra cadena, esto genera una nueva cadena cuyo
+          contenido equivale a la unión del texto de la primera cadena y de la segunda cadena al final.
         </span>
       </li></br>
       <li>¿Cuál operador me permite sumar o concatenar?
@@ -69,25 +66,25 @@
         <span>integer deudas</span>
       </li>
     </ul></br>
-    <li>Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.</li></br>
-    <code>
+    <li>Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
+    </li></br>
+    <p class="pcodigo"> Código:</p><br>
     <pre>
-      let nombre = "Cristian",
-      apellido = "Cuesta";
-      const usuario = "usuariocv"
-      let edad = 38;
-      var correo = "micorreo@msn.com";
-      let mayorEdad = true,
-      ahorrado = 500;
-      let deudas = 100;
-    </pre>
-  </code>
-    </br>
+<code class="codigo">
+  let nombre = "Cristian",
+  apellido = "Cuesta";
+  const usuario = "usuariocv"
+  let edad = 38;
+  var correo = "micorreo@msn.com";
+  let mayorEdad = true,
+  ahorrado = 500;
+  let deudas = 100;
+</code>
+</pre>
     <li>Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:<br>
       <ul>
         <li>Nombre completo (nombre y apellido)</li><br>
-        <li>Dinero real (dinero ahorrado menos deudas)
-        </li>
+        <li>Dinero real (dinero ahorrado menos deudas)</li>
         <script>
           let nombre = "Cristian",
             apellido = "Cuesta";
@@ -102,33 +99,51 @@
         </script>
       </ul>
     </li>
-  </ol><br><br>
-  <h2>Funciones.</h2>
-  <ol>
+  </ol><br>
+  <p class="pcodigo"> Código:</p><br>
+  <pre>
+<code class="codigo">
+  let nombre = "Cristian",
+  apellido = "Cuesta";
+  const usuario = "usuariocv";
+  let edad = 38;
+  var correo = "micorreo@msn.com";
+  let mayorEdad = true,
+  ahorrado = 500;
+  let deudas = 100;
+  console.log(`Nombre completo: ${nombre} ${apellido}`)
+  console.log(`Dinero real: ${ahorrado - deudas}`)
+</code>
+</pre><br><br><br>
+
+  <h2 class="titulo2">Funciones.</h2>
+  <hr><br>
+  <ol class="variables operaciones">
     <li>Responde las siguientes preguntas en la sección de comentarios:</li><br>
     <ul>
-      <li>¿Qué es una función?</li>
+      <li>¿Qué es una función?</li><br>
       <p>Una función es un bloque de sentencias de código cuya finalidad es realizar una tarea que puede o no ser
-        repetitiva, por lo general estás devuelven un valor. </p>
+        repetitiva, por lo general estás devuelven un valor. </p><br>
       <li>¿Cuándo me sirve usar una función en mi código?</li><br>
       <p>Una función es útil cuando debo realizar un proceso u operación previamente definida en un bloque de código,
-        entonces mediante las llamadas a esta función puedo reutilizarla las veces que sean necesarias.</p>
+        entonces mediante las llamadas a esta función puedo reutilizarla las veces que sean necesarias.</p><br>
       <li>¿Cuál es la diferencia entre parámetros y argumentos de una función?</li> <br>
       <p>Parámetros son las variables definidas dentro del ámbito de recepción de una función; en cambio argumentos son
         los valores
-        que dichos parámetros van a tomar al momento de hacer la llamada a dicha función</p>
+        que dichos parámetros van a tomar al momento de hacer la llamada a dicha función.</p><br>
     </ul><br>
     <li>Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por
-      parámetros y argumentos en una función:</li>
-    <code>
-        <pre>
-          const name = "Juan David";
-          const lastname = "Castro Gallego";
-          const completeName = name + lastname;
-          const nickname = "juandc";
-          console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
-        </pre>
-      </code>
+      parámetros y argumentos en una función:</li><br>
+    <p class="pcodigo"> Código:</p><br>
+    <pre>
+<code class="codigo">
+  const name = "Juan David";
+  const lastname = "Castro Gallego";
+  const completeName = name + lastname;
+  const nickname = "juandc";
+  console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+</code>
+</pre>
     <script>
       const funciones2 = (name = "Juan David", lastname = "Castro Gallego", nickname = "juandc") => {
         let completename = name + " " + lastname;
@@ -136,53 +151,60 @@
       }
       funciones2();
     </script>
-  </ol>
-  <h2>Condicionales</h2>
-  <ol>
-    <li>Responde las siguientes preguntas en la sección de comentarios:<br>
-      <ul>
-        <li>¿Qué es una condicional?</li>
-        <p>Es una sentencia de código que al evaluarse como verdadera permite la ejecución de cierto bloque de código,
-          este bloque de código se encuentra delimitado por el ámbito especificado por la condicional. </p>
-        <li>¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?.</li> <br>
-        <p>Unario: como el de negación, este cambia el valor de verdad de una variable o una expresión.</p>
-        <p>Relacional u operacional: Compara el valor de dos variables o expresiones determinando como verdadero o falso
-          la expresión indicada en la condición.</p>
-        <p>De bloque: Definen un ámbito o bloque de código donde se utilizan los operadores unarios y/o relacionales
-          tenemos el if(), si una condición es evaluada como verdadera se ejecuta las líneas de código escritas en su
-          ámbito, en caso de ser falsa, ignora el bloque de sentencias del if, y pasa a la siguiente línea fuera de este
-          if.<br>
-          if, else; o if, else if: En Ambas se da la posibilidad de ejecutar una sección del bloque de código cuanda la
-          condición ha sido evaluada como falsa, ésta es la sección del caso contrario; la diferencia es que la primera
-          se ejecuta de forma inclusiva y la segunda se ejecuta de forma excluyente.</p>
-        <p>Ternario: Es similar al if else, y es muy útil cuando la operación a realizar devuelve un valor booleano,
-          entonces cuando la respuesta es verdadera, se ejecutara la línea de código indicada o si es falsa la línea
-          correspondiente.</p>
-        <li>¿Puedo combinar funciones y condicionales?</li>
-        <p>Si, si es posible.</p>
-      </ul>
-    </li>
+  </ol><br><br>
+  <h2 class="titulo2">Condicionales</h2>
+  <hr><br><br>
+  <ol class="variables operaciones">
+    <li>Responde las siguientes preguntas en la sección de comentarios:</li><br>
+    <ul>
+      <li>¿Qué es una condicional?</li><br>
+      <p>Es una sentencia de código que al evaluarse como verdadera permite la ejecución de cierto bloque de código,
+        este bloque de código se encuentra delimitado por el ámbito especificado por la condicional. </p><br>
+      <li>¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?.</li> <br>
+      <p><span>Unario:</span> como el de negación, este cambia el valor de verdad de una variable o una expresión.</p>
+      <br>
+      <p><span>Relacional u operacional:</span> Compara el valor de dos variables o expresiones determinando como
+        verdadero o falso
+        la expresión indicada en la condición.</p><br>
+      <p><span>De bloque:</span> Definen un ámbito o bloque de código donde se utilizan los operadores unarios y/o
+        relacionales
+        tenemos el if(), si una condición es evaluada como verdadera se ejecuta las líneas de código escritas en su
+        ámbito, en caso de ser falsa, ignora el bloque de sentencias del if, y pasa a la siguiente línea fuera de este
+        if.<br>
+        if, else; o if, else if: En Ambas se da la posibilidad de ejecutar una sección del bloque de código cuanda la
+        condición ha sido evaluada como falsa, ésta es la sección del caso contrario; la diferencia es que la primera
+        se ejecuta de forma inclusiva y la segunda se ejecuta de forma excluyente.</p><br>
+      <p><span>Ternario:</span> Es similar al if else, y es muy útil cuando la operación a realizar devuelve un valor
+        booleano,
+        entonces cuando la respuesta es verdadera, se ejecutara la línea de código indicada o si es falsa la línea
+        correspondiente.</p><br>
+      <li>¿Puedo combinar funciones y condicionales?</li><br>
+      <p>Si, si es posible.</p><br>
+    </ul>
     <li>Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:</li>
-    <code>
-      <pre>
-        const tipoDeSuscripcion = "Basic";
-        
-        switch (tipoDeSuscripcion) {
-        case "Free":
-        console.log("Solo puedes tomar los cursos gratis");
-        break;
-        case "Basic":
-        console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
-        break;
-        case "Expert":
-        console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
-        break;
-        case "ExpertPlus":
-        console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
-        break;
-        }
-      </pre>
-    </code>
+    <br>
+    <p class="pcodigo"> Código:</p><br>
+    <pre>
+<code>
+  const tipoDeSuscripcion = "Basic";
+  
+  switch (tipoDeSuscripcion) {
+
+  case "Free":
+    console.log("Solo puedes tomar los cursos gratis");
+    break;
+  case "Basic":
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+    break;
+  case "Expert":
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+    break;
+  case "ExpertPlus":
+    console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+    break;
+  }      
+</code>
+</pre>
     <script>
       //Primera parte switch
       const tipoDeSuscripcion = "Basic";
@@ -234,23 +256,25 @@
     <li>Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni
       else
       if).</li><br><br>
-    <code>
-      <pre>
-        const tipoDeSuscripcion = "Basic";
-        if (tipoDeSuscripcion === "Free") {
-        console.log("Solo puedes tomar los cursos gratis");
-        }
-        if (tipoDeSuscripcion === "Basic") {
-        console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
-        }
-        if (tipoDeSuscripcion === "Expert") {
-        console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
-        }
-        if (tipoDeSuscripcion === "ExpertPlus") {
-        console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
-        }
-      </pre>
+    <p class="pcodigo"> Código:</p><br>
+    <pre>
+<code>
+const tipoDeSuscripcion = "Basic";
+
+  if (tipoDeSuscripcion === "Free") {
+    console.log("Solo puedes tomar los cursos gratis");
+  }
+  if (tipoDeSuscripcion === "Basic") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+  }
+  if (tipoDeSuscripcion === "Expert") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+  }
+  if (tipoDeSuscripcion === "ExpertPlus") {
+    console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+  }
     </code>
+</pre>
     <script>
       const tipoDeSuscripcion = "Basic";
       if (tipoDeSuscripcion === "Free") {
@@ -269,140 +293,153 @@
   </ol>
   <h4>Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento
     con
-    arrays y un solo condicional. 😏</h4>
-  <h2>Ciclos</h2>
+    arrays y un solo condicional. 😏</h4><br><br>
+  <h2 class="titulo2">Ciclos</h2>
   <hr><br>
-  <ol>
-    <li>Responde las siguientes preguntas en la sección de comentarios:
-      <ul>
-        <li>¿Qué es un ciclo?</li>
-        <p>Es un bloque de sentencias de código que se repetiran n veces siempre y cuando la condición dada se cumpla
-          como verdadera.</p>
-        <li>¿Qué tipos de ciclos existen en JavaScript?</li>
-        <p>Existen: for, while, do while, para colecciones el for of y for in</p>
-        <li>¿Qué es un ciclo infinito y por qué es un problema?</li>
-        <p>Es un ciclo cuyo código de ejecuta indefinidamente, es un problema ya que llega a consumir toda la memoria
-          principal del computador, obligando así a detener su ejecución de manera forzada.</p>
-        <li>¿Puedo mezclar ciclos y condicionales?</li>
-        <p>Si es posible según se requiera.</p>
-      </ul>
-    </li>
-    <li>Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:</li>
-    <code>
-        <pre>
-          for (let i = 0; i < 5; i++) { console.log("El valor de i es: " + i);
-          }
-        </pre>
-      </code>
-    <code>
-        <pre>
-          Respuesta:
-          let i=0;
-          while (i < 5) {
-            console.log("El valor de i es: " + i);
-            i++;
-          }
-        </pre>
-      </code>
-    <code>
-        <pre>
-          for (let i = 10; i >= 2; i--) {
-          console.log("El valor de i es: " + i);
-          }
-        </pre>
-      </code>
-    <code>
-        <pre>
-          Respuesta:
-          let i = 10;
-          while(i > 2 ){
-            console.log("El valor de i es: " + i);
-            i--;
-          }
-        </pre>
-      </code>
+  <ol class="variables operaciones">
+    <li>Responde las siguientes preguntas en la sección de comentarios:</li><br>
+    <ul>
+      <li>¿Qué es un ciclo?</li><br>
+      <p>Es un bloque de sentencias de código que se repetiran n veces siempre y cuando la condición dada se cumpla
+        como verdadera.</p><br>
+      <li>¿Qué tipos de ciclos existen en JavaScript?</li><br>
+      <p>Existen: for, while, do while, para colecciones el for of y for in</p><br>
+      <li>¿Qué es un ciclo infinito y por qué es un problema?</li><br>
+      <p>Es un ciclo cuyo código de ejecuta indefinidamente, es un problema ya que llega a consumir toda la memoria
+        principal del computador, obligando así a detener su ejecución de manera forzada.</p><br>
+      <li>¿Puedo mezclar ciclos y condicionales?</li><br>
+      <p>Si es posible según se requiera.</p><br>
+    </ul>
+    <li>Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:</li><br>
+    <p class="pcodigo"> Código:</p><br>
+    <pre>
+<code>
+  for (let i = 0; i < 5; i++) { console.log("El valor de i es: " + i);
+  }
+</code>
+</pre>
+    <pre>
+<code>
+//Respuesta:
+
+let i=0;
+  while (i < 5) {
+    console.log("El valor de i es: " + i);
+    i++;
+  }
+</code>
+</pre>
+    <pre>
+<code>
+  for (let i = 10; i >= 2; i--) {
+    console.log("El valor de i es: " + i);
+  }
+</code>
+</pre>
+    <pre>
+<code>
+//Respuesta:
+
+let i = 10;
+
+  while(i > 2 ){
+    console.log("El valor de i es: " + i);
+    i--;
+  }
+</code>
+</pre>
+
     <li>Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un
-      mensaje
-      de felicitaciones, pero si responden mal, volvemos a empezar.</li>
-    <p>Pista: puedes usar la función prompt de JavaScript.</p>
-    <script>
-      let suma = 0;
-      while (suma !== 4) {
-        suma = parseInt(prompt("¿Cuánto es 2 + 2 ?"));
-        if (suma === 4) {
-          alert(`Felicitaciones respuesta correcta!`);
-        }
-      }
-    </script>
+      mensaje de felicitaciones, pero si responden mal, volvemos a empezar.</li>
+    <p>Pista: puedes usar la función prompt de JavaScript.</p><br>
+    <p class="codigo">Código:</p>
+    <pre>
+  <code>
+  let suma = 0;
+
+  while (suma !== 4) {
+    suma = parseInt(prompt("¿Cuánto es 2 + 2 ?"));
+    if (suma === 4) {
+      alert(`Felicitaciones respuesta correcta!`);
+    }
+}
+      </code>
+    </pre>
   </ol>
-  <h2>Listas</h2>
+  <h2 class="titulo2">Listas</h2>
   <hr><br>
-  <ol>
+  <ol class="variables operaciones">
     <li>
       Responde las siguientes preguntas en la sección de comentarios:
-      <ul>
-        <li>¿Qué es un array?</li>
-        <p>Un Arreglo o array es una colección de elementos que pueden ser o no datos del mismo tipo, dependiendo del
-          lenguaje de programación.</p>
-        <li>¿Qué es un objeto?</li>
-        <p>Es la representación de una entidad la cuál posee una cantidad de atributos o propiedades y metodos o
-          funciones propias.</p>
-        <li>¿Cuándo es mejor usar objetos o arrays?</li>
-        <p>Es mejor usar objetos cuando se maneja un conjunto de propiedades, y el array cuando se requiere utilizar una
-          colección de elementos.</p>
-        <li>¿Puedo mezclar arrays con objetos o incluso objetos con arrays?</li>
-        <p>Si ya que tanto uno puede contener al otro y viceversa.</p>
-      </ul>
-    </li>
-    <li>Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.</li>
+    </li><br>
+    <ul>
+      <li>¿Qué es un array?</li><br>
+      <p>Un Arreglo o array es una colección de elementos que pueden ser o no datos del mismo tipo, dependiendo del
+        lenguaje de programación.</p><br>
+      <li>¿Qué es un objeto?</li><br>
+      <p>Es la representación de una entidad la cuál posee una cantidad de atributos o propiedades y metodos o
+        funciones propias.</p><br>
+      <li>¿Cuándo es mejor usar objetos o arrays?</li><br>
+      <p>Es mejor usar objetos cuando se maneja un conjunto de propiedades, y el array cuando se requiere utilizar una
+        colección de elementos.</p><br>
+      <li>¿Puedo mezclar arrays con objetos o incluso objetos con arrays?</li><br>
+      <p>Si ya que tanto uno puede contener al otro y viceversa.</p><br>
+    </ul>
+    <li>Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.</li><br>
     <script>
       const imprimirPrimerElemento = arreglo => console.log(arreglo[0]);
       imprimirPrimerElemento(["elemento 1", 2, true, 4, 5]);
     </script>
+    <p class="codigo">Código:</p>
     <pre>
-        <code>
-          const imprimirPrimerElemento = arreglo => console.log(arreglo[0]);
-          imprimirPrimerElemento(["elemento 1", 2, true, 4, 5]);
-        </code>
-      </pre>
+<code>
+  const imprimirPrimerElemento = arreglo => console.log(arreglo[0]);
+  imprimirPrimerElemento(["elemento 1", 2, true, 4, 5]);
+</code>
+</pre>
     <li>
       Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se
       vale
-      imprimir el array completo).
-      <script>
-        let arreglo1 = ["elemento 1", 2, true, 4, 5];
-        const imprimirArregloElementos = arreglo1 => {
-          for (let i = 0; i < arreglo1.lenght; i++) {
-            console.log(arreglo1[i]);
-          }
+      imprimir el array completo).</li><br>
+    <script>
+      let arreglo1 = ["elemento 1", 2, true, 4, 5];
+      const imprimirArregloElementos = arreglo1 => {
+        for (let i = 0; i < arreglo1.lenght; i++) {
+          console.log(arreglo1[i]);
         }
-        imprimirArregloElementos(arreglo1);
-      </script>
-      <p>Código:</p>
-      <pre>
-                <code>
-                  const imprimirArregloElementos = arreglo1 => {
-                    for (let i=0; i < arreglo1.lenght; i++ ){
-                      console.log(arreglo1[i]);
-                    }
-                  }
-                  imprimirArregloElementos(["elemento 1", 2, true, 4, 5]);
-                </code>
-            </pre>
-    </li>
+      }
+      imprimirArregloElementos(arreglo1);
+    </script>
+    <p class="codigo">Código:</p>
+    <pre>
+<code>
+  const imprimirArregloElementos = arreglo1 => {
+    for (let i=0; i < arreglo1.lenght; i++ ){
+      console.log(arreglo1[i]);
+    }
+  }
+  imprimirArregloElementos(["elemento 1", 2, true, 4, 5]);
+</code>
+</pre>
     <li>
       Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no
       se vale
-      imprimir el objeto completo).
-
-      <script>
-        let auto1 = { color: "red", marca: "mazda", año: 2005 };
-        const imprimirAtributos = obj => console.log("Auto: " + Object.keys(obj));
-        imprimirAtributos(auto1);
-      </script>
-    </li>
-    <li></li>
-  </ol>
+      imprimir el objeto completo).</li><br>
+    <script>
+      let auto1 = { color: "red", marca: "mazda", año: 2005 };
+      const imprimirAtributos = obj => console.log("Auto: " + Object.keys(obj));
+      imprimirAtributos(auto1);
+    </script>
+    <p class="codigo">Código:</p>
+    <pre>
+<code>
+  let auto1 = { color: "red", marca: "mazda", año: 2005 };
+  const imprimirAtributos = obj => console.log("Auto: " + Object.keys(obj));
+  imprimirAtributos(auto1);
+</code>
+</pre>
+  </ol><br><br>
+  <footer>Gracias por su atención.</footer>
 </body>
 
 </html>
