@@ -25,45 +25,45 @@
         <span>
           Al declarar una variable lo que se hace simplemente es darle un nombre e indicar el tipo de dicha variable,
           mientras que inicializarla es asignarle el dato que va a almacenar.
-        </span>
+        </span><br>
       </li></br>
       <li>¿Cuál es la diferencia entre sumar números y concatenar strings?
         <span>Sumar números es realizar la adición o suma de al menos dos números dados. Concatenar strings es tomar una
           cadena de texto, y a ésta agregarle el contenido de texto de otra cadena, esto genera una nueva cadena cuyo
           contenido equivale a la unión del texto de la primera cadena y de la segunda cadena al final.
-        </span>
+        </span><br>
       </li></br>
       <li>¿Cuál operador me permite sumar o concatenar?
         <span>El operador que me permite sumar o concatenar es el "+" y la tarea depende del tipo de datos de cada
           variable.
-        </span>
+        </span><br>
       </li></br>
     </ul></br>
     <li>Determina el nombre y tipo de dato para almacenar en variables la siguiente información:</li></br>
     <ul>
       <li>Nombre</br>
-        <span>String nombre</span>
+        <span>String nombre</span><br>
       </li>
       <li>Apellido</br>
-        <span>String apellido</span>
+        <span>String apellido</span><br>
       </li>
       <li>Nombre de usuario en Platzi</br>
-        <span>String usuario</span>
+        <span>String usuario</span><br>
       </li>
       <li>Edad</br>
-        <span>integer edad</span>
+        <span>integer edad</span><br>
       </li>
       <li>Correo electrónico</br>
-        <span>String correo</span>
+        <span>String correo</span><br>
       </li>
       <li>Mayor de edad</br>
-        <span>Boolean edad</span>
+        <span>Boolean edad</span><br>
       </li>
       <li>Dinero ahorrado</br>
-        <span>integer ahorrado</span>
+        <span>integer ahorrado</span><br>
       </li>
       <li>Deudas</br>
-        <span>integer deudas</span>
+        <span>integer deudas</span><br>
       </li>
     </ul></br>
     <li>Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
@@ -80,24 +80,24 @@
   ahorrado = 500;
   let deudas = 100;
 </code>
-</pre>
-    <li>Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:<br>
-      <ul>
-        <li>Nombre completo (nombre y apellido)</li><br>
-        <li>Dinero real (dinero ahorrado menos deudas)</li>
-        <script>
-          let nombre = "Cristian",
-            apellido = "Cuesta";
-          const usuario = "usuariocv";
-          let edad = 38;
-          var correo = "micorreo@msn.com";
-          let mayorEdad = true,
-            ahorrado = 500;
-          let deudas = 100;
-          console.log(`Nombre completo: ${nombre} ${apellido}`)
-          console.log(`Dinero real: ${ahorrado - deudas}`)
-        </script>
-      </ul>
+</pre><br>
+    <li>Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:</li><br>
+    <ul>
+      <li>Nombre completo (nombre y apellido)</li><br>
+      <li>Dinero real (dinero ahorrado menos deudas)</li><br>
+      <script>
+        let nombre = "Cristian",
+          apellido = "Cuesta";
+        const usuario = "usuariocv";
+        let edad = 38;
+        var correo = "micorreo@msn.com";
+        let mayorEdad = true,
+          ahorrado = 500;
+        let deudas = 100;
+        console.log(`Nombre completo: ${nombre} ${apellido}`)
+        console.log(`Dinero real: ${ahorrado - deudas}`)
+      </script>
+    </ul>
     </li>
   </ol><br>
   <p class="pcodigo"> Código:</p><br>
@@ -114,7 +114,7 @@
   console.log(`Nombre completo: ${nombre} ${apellido}`)
   console.log(`Dinero real: ${ahorrado - deudas}`)
 </code>
-</pre><br><br><br>
+</pre><br><br>
 
   <h2 class="titulo2">Funciones.</h2>
   <hr><br>
@@ -143,7 +143,7 @@
   const nickname = "juandc";
   console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
 </code>
-</pre>
+</pre><br>
     <script>
       const funciones2 = (name = "Juan David", lastname = "Castro Gallego", nickname = "juandc") => {
         let completename = name + " " + lastname;
@@ -204,7 +204,7 @@
     break;
   }      
 </code>
-</pre>
+</pre><br>
     <script>
       //Primera parte switch
       const tipoDeSuscripcion = "Basic";
@@ -274,7 +274,7 @@ const tipoDeSuscripcion = "Basic";
     console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
   }
     </code>
-</pre>
+</pre><br>
     <script>
       const tipoDeSuscripcion = "Basic";
       if (tipoDeSuscripcion === "Free") {
@@ -290,7 +290,7 @@ const tipoDeSuscripcion = "Basic";
         console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
       }
     </script>
-  </ol>
+  </ol><br>
   <h4>Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento
     con
     arrays y un solo condicional. 😏</h4><br><br>
@@ -318,7 +318,7 @@ const tipoDeSuscripcion = "Basic";
   }
 </code>
 </pre><br>
-<pre>
+    <pre>
 <code>
 //Respuesta:
 
@@ -336,7 +336,7 @@ let i=0;
   }
 </code>
 </pre> <br>
-<pre>
+    <pre>
 <code>
 //Respuesta:
 
@@ -349,7 +349,7 @@ let i = 10;
 </code>
 </pre><br>
     <li>Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un
-      mensaje de felicitaciones, pero si responden mal, volvemos a empezar.</li>
+      mensaje de felicitaciones, pero si responden mal, volvemos a empezar.</li><br>
     <p>Pista: puedes usar la función prompt de JavaScript.</p><br>
     <p class="codigo">Código:</p>
     <pre>
@@ -364,7 +364,7 @@ let i = 10;
 }
       </code>
     </pre><br>
-  </ol>
+  </ol><br>
   <h2 class="titulo2">Listas</h2>
   <hr><br>
   <ol class="variables operaciones">
@@ -389,7 +389,7 @@ let i = 10;
       const imprimirPrimerElemento = arreglo => console.log(arreglo[0]);
       imprimirPrimerElemento(["elemento 1", 2, true, 4, 5]);
     </script>
-    <p class="codigo">Código:</p>
+    <p class="codigo">Código:</p><br>
     <pre>
 <code>
   const imprimirPrimerElemento = arreglo => console.log(arreglo[0]);
@@ -409,7 +409,7 @@ let i = 10;
       }
       imprimirArregloElementos(arreglo1);
     </script>
-    <p class="codigo">Código:</p>
+    <p class="codigo">Código:</p><br>
     <pre>
 <code>
   const imprimirArregloElementos = arreglo1 => {
@@ -429,14 +429,14 @@ let i = 10;
       const imprimirAtributos = obj => console.log("Auto: " + Object.keys(obj));
       imprimirAtributos(auto1);
     </script>
-    <p class="codigo">Código:</p>
-<pre>
+    <p class="codigo">Código:</p><br>
+    <pre>
 <code>
   let auto1 = { color: "red", marca: "mazda", año: 2005 };
   const imprimirAtributos = obj => console.log("Auto: " + Object.keys(obj));
   imprimirAtributos(auto1);
 </code>
-</pre>
+</pre><br>
   </ol><br><br>
   <footer>Gracias por su atención.</footer>
 </body>
