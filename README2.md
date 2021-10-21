@@ -1,6 +1,11 @@
 ### Archivo de prueba README
 #################################
 
+
+OTRO TÍTULO
+###########
+
+
 Titulo 1
 =====================================
 -Este es el primer directorio de prueba de git, del curso práctico de JS.
