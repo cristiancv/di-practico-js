@@ -11,7 +11,11 @@ function perimetroCuadrado(lado) {
 }
 
 const areaCuadrado = (lado) => {
-  return lado * lado;
+  if (typeof lado !== "number") {
+    return alert(`El valor ingresado "${lado}" no es un número`);
+  } else {
+    return lado * lado;
+  }
 };
 
 //Código del Triángulo
