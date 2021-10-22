@@ -1,14 +1,11 @@
-### Archivo de prueba README
-#################################
+# Curso Práctico de Platzi di JS.
 
+....
 
-OTRO TÍTULO
--------------
+## Taller 1: Figuras geométricas:
 
-Titulo 1
-=====================================
--Este es el primer directorio de prueba de git, del curso práctico de JS.
--Prueba previa de git antes de github.
-
-Otro párrafo de prueba
---------------------------
+- Primer paso: Definir las formulas.
+- Segundo paso: Implementar las formulas en JavaScript.
+- Tercer paso: Crear funciones.
+- Cuarto paso: Integrar JavaScript con HTML.
+-
