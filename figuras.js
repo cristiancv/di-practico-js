@@ -35,3 +35,17 @@ console.info("El perimetro del triángulo es: " + perimetroTriangulo);
 const areaTriangulo = (baseTriangulo * alturaTriángulo) / 2;
 console.info("El área del triángulo es: " + areaTriangulo);
 console.groupEnd();
+
+//Código del Círculo
+console.group("Círculos");
+//Radio
+const radioCirculo = 4;
+//Diámetro
+const diametroCirculo = radioCirculo * 2;
+//PI
+const pi = Math.PI;
+//Circunferencia
+const permitroCirculo = diametroCirculo * pi;
+
+const areaCirculo = radioCirculo * radioCirculo * pi;
+console.groupEnd();
