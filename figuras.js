@@ -2,20 +2,30 @@
 
 const ladoCuadrado = 5;
 
-function perimetroCuadrado(lado) {
+function perimetroCuadrado(lado = 0) {
+  let perimetro = 0;
+  if (lado === 0)
+    return console.error(
+      `El valor ingresado "${lado}" debe ser distinto de cero.`
+    );
   if (typeof lado !== "number") {
     return console.error(`El valor ingresado "${lado}" no es un número`);
   } else {
-    const perimetro = lado * 4;
+    perimetro = lado * 4;
   }
   return perimetro;
 }
 
-const areaCuadrado = (lado) => {
+const areaCuadrado = (lado = 0) => {
+  let area = 0;
+  if (lado === 0)
+    return console.error(
+      `El valor ingresado "${lado}" debe ser distinto de cero.`
+    );
   if (typeof lado !== "number") {
     return console.error(`El valor ingresado "${lado}" no es un número`);
   } else {
-    const area = lado * lado;
+    area = lado * lado;
   }
   return area;
 };
@@ -106,19 +116,19 @@ const areaCirculo = (radio) => {
 };
 function calcularPerimetroCuadrado() {
   const input1 = document.getElementById("InputCuadrado");
-  const lado1 = input1.value;
-  const perimetro = perimetroCuadrado(lado1);
-  alert(perimetro);
+  const lado1 = parseFloat(input1.value);
+  let perimetro = perimetroCuadrado(lado1);
+
   let parrafo = document.getElementById("respuesta");
   parrafo.style.textAlign = "center";
-  parrafo.textContent = String(perimetro);
+  parrafo.textContent = `El perímetro del cuadrado es:  ${perimetro}`;
 }
 function calcularAreaCuadrado() {
   const input = document.getElementById("InputCuadrado");
-  const lado = input.value;
-  const area = areaCuadrado(lado);
-  alert(area);
+  const lado = parseFloat(input.value);
+  let area = areaCuadrado(lado);
+
   let parrafo = document.getElementById("respuesta");
   parrafo.style.textAlign = "center";
-  parrafo.textContent = String(area);
+  parrafo.textContent = `El área del cuadrado es: ${area}`;
 }
