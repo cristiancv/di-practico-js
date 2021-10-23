@@ -4,18 +4,20 @@ const ladoCuadrado = 5;
 
 function perimetroCuadrado(lado) {
   if (typeof lado !== "number") {
-    return alert(`El valor ingresado "${lado}" no es un número`);
+    return console.error(`El valor ingresado "${lado}" no es un número`);
   } else {
-    return lado * 4;
+    const perimetro = lado * 4;
   }
+  return perimetro;
 }
 
 const areaCuadrado = (lado) => {
   if (typeof lado !== "number") {
-    return alert(`El valor ingresado "${lado}" no es un número`);
+    return console.error(`El valor ingresado "${lado}" no es un número`);
   } else {
-    return lado * lado;
+    const area = lado * lado;
   }
+  return area;
 };
 
 //Código del Triángulo
@@ -102,3 +104,21 @@ const areaCirculo = (radio) => {
     return areaC;
   }
 };
+function calcularPerimetroCuadrado() {
+  const input1 = document.getElementById("InputCuadrado");
+  const lado1 = input1.value;
+  const perimetro = perimetroCuadrado(lado1);
+  alert(perimetro);
+  let parrafo = document.getElementById("respuesta");
+  parrafo.style.textAlign = "center";
+  parrafo.textContent = String(perimetro);
+}
+function calcularAreaCuadrado() {
+  const input = document.getElementById("InputCuadrado");
+  const lado = input.value;
+  const area = areaCuadrado(lado);
+  alert(area);
+  let parrafo = document.getElementById("respuesta");
+  parrafo.style.textAlign = "center";
+  parrafo.textContent = String(area);
+}
