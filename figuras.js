@@ -1,5 +1,5 @@
 //Código del Cuadrado
-//console.group("Cuadrados");
+
 const ladoCuadrado = 5;
 
 function perimetroCuadrado(lado) {
@@ -19,7 +19,7 @@ const areaCuadrado = (lado) => {
 };
 
 //Código del Triángulo
-console.group("Tríangulos");
+//console.group("Tríangulos");
 const ladoTriangulo1 = 6;
 const ladoTriangulo2 = 6;
 const baseTriangulo = 4;
@@ -36,27 +36,69 @@ console.info(
 const alturaTriángulo = 5.5;
 console.info("La altura del triángulo es: " + alturaTriángulo + "cm");
 
-const perimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo;
-console.info("El perimetro del triángulo es: " + perimetroTriangulo + "cm");
+const perimetroTriangulo = (lado1, lado2, base) => {
+  if (
+    typeof lado1 !== "number" ||
+    typeof lado2 !== "number" ||
+    typeof base !== "number"
+  )
+    return console.error(
+      `Todos los valores: ${lado1}, ${lado2}, ${base} deben ser números`
+    );
+  else {
+    let perimetroTri = lado1 + lado2 + base;
+    return perimetroTri;
+  }
+};
 
-const areaTriangulo = (baseTriangulo * alturaTriángulo) / 2;
-console.info("El área del triángulo es: " + areaTriangulo + "cm^2");
-console.groupEnd();
+const areaTriangulo = (base, altura) => {
+  if (typeof base !== "number" || typeof altura !== "number")
+    return console.error(
+      `Todos los valores: ${base}, ${altura} deben ser números`
+    );
+  else {
+    let areaTri = (base * altura) / 2;
+    return areaTri;
+  }
+};
 
 //Código del Círculo
-console.group("Círculos");
+//console.group("Círculos");
+
 //Radio
 const radioCirculo = 4;
+
 //Diámetro
-const diametroCirculo = radioCirculo * 2;
-console.log("EL diametro del círculo es: " + diametroCirculo + "cm");
+
+const diametroCirculo = (radioCirculo) => {
+  if (typeof radioCirculo !== "number") {
+    return console.error(
+      `El valor ingresado: ${radioCirculo}, debe ser número`
+    );
+  } else {
+    let diametroC = radioCirculo * 2;
+    return diametroC;
+  }
+};
+
 //PI
 const pi = Math.PI;
 
 //Circunferencia
-const perimetroCirculo = diametroCirculo * pi;
-console.log("EL perimetro del círculo es: " + perimetroCirculo + "cm");
+const perimetroCirculo = (diametro) => {
+  if (typeof diametro !== "number") {
+    return console.error(`El valor ingresado: ${diametro}, debe ser número`);
+  } else {
+    let perimetroC = diametro * Math.PI;
+    return perimetroC;
+  }
+};
 
-const areaCirculo = radioCirculo * radioCirculo * pi;
-console.log("EL área del círculo es: " + areaCirculo + "cm^2");
-console.groupEnd();
+const areaCirculo = (radio) => {
+  if (typeof radio !== "number") {
+    return console.error(`El valor ingresado: ${radio}, debe ser número`);
+  } else {
+    let areaC = Math.pow(radio, 2) * Math.PI;
+    return areaC;
+  }
+};
