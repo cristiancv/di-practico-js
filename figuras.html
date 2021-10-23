@@ -14,19 +14,64 @@
     <p>Este es el primer taller del curso práctio de Javascript.</p>
   </header>
   <section>
-    <h2>Cálcula el área y perímetro de un cuadrado.</h2>
+    <h2>Cálcula el área y perímetro de un Cuadrado.</h2>
     <form action="">
       <label for="InputCuadrado"> Escribe el valor de lado del cuadrado.</label>
-      <input id="InputCuadrado" name="InputCuadrado" type="number" min=1 required="" />
+      <input id="InputCuadrado" name="InputCuadrado" type="number" required="" placeholder="Ingrese número positivo" />
       <button type="button" onclick="calcularPerimetroCuadrado()">
         Cálcula el perímetro.
       </button>
       <button type="button" onclick="calcularAreaCuadrado()">Cálcula el área.</button>
+      <div class="contenedor" id="cuadrado-respuesta">
+        <p id="respuesta-cuadrado"> La respuesta Aquí</p>
+      </div>
     </form>
   </section>
-  <div class="contenedor" id="div-respuesta">
-    <p id="respuesta"> La respuesta Aquí</p>
-  </div>
+  <hr>
+  <section>
+    <h2>Cálcula el área y perímetro de un Triángulo.</h2>
+    <form action="">
+      <label for="lado1"> Escribe el valor de lado 1 del triángulo.</label>
+      <input id="lado1" name="lado1" type="number" required="" placeholder="Ingrese número positivo" /><br>
+      <label for="lado2"> Escribe el valor de lado 2 del triángulo.</label>
+      <input id="lado2" name="lado2" type="number" required="" placeholder="Ingrese número positivo" /><br>
+      <label for="base"> Escribe el valor de base del triángulo.</label>
+      <input id="base" name="base" type="number" required="" value="1" title="valor de la base" /><br>
+      <label for="altura"> Escribe el valor de altura del triángulo (Para calcular el área).</label>
+      <input id="altura" name="altura" type="number" required="" value="1" title="valor de la altura" /><br>
+      <button type="button" onclick="calcularPerimetroTriangulo()">
+        Cálcula el perímetro del triángulo.
+      </button>
+      <button type="button" onclick="calcularAreaTriangulo()">
+        Cálcula el Área del triángulo.
+      </button>
+      <div class="contenedor" id="triangulo-respuesta">
+        <p id="respuesta-triangulo"> La respuesta Aquí</p>
+      </div>
+    </form><br>
+  </section>
+  <hr>
+
+  <section>
+    <h2>Cálcula el área y perímetro de un Círculo.</h2>
+    <form action="">
+      <label for="radio">Escribe el valor de radio.</label>
+      <input id="radio" name="radio" type="number" required="" placeholder="Ingrese número positivo" /><br>
+      <button type="button" onclick="calcularDiametroCirculo()">
+        Cálcula el diámetro del círculo.
+      </button>
+      <button type="button" onclick="calcularPerimetroCirculo()">
+        Cálcula el perímetro del círculo.
+      </button>
+      <button type="button" onclick="calcularAreaCirculo()">
+        Cálcula el área del círculo.
+      </button>
+      <div class="contenedor" id="circulo-respuesta">
+        <p id="respuesta-circulo"> La respuesta Aquí</p>
+      </div>
+    </form><br>
+  </section>
+  <hr>
   <script type="text/javascript" src="./figuras.js"></script>
 </body>
 
