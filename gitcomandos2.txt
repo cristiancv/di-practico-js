@@ -173,3 +173,132 @@
   497  git log
   499  git push -uf origin learning
   501  history |grep git > gitcomandos2.txt
+   35  d git/mirepo_python/peliculas
+   37  cd git/mirepo_python/peliculas
+   68  git status
+   69  git log
+   70  git config
+   71  git config --get
+   72  git config -l
+   73  git fetch origin learning
+   74  git branch -l
+   75  git fetch origin main
+   76  git checkout -b learning
+   77  git branch -l
+   78  git fetch origin learning
+   80  git pull origin learning
+   81  git pull origin main
+   82  git status
+   83  git add -A
+   84  git pull origin main
+   85  git commit -m "Previo al pull de hoja css"
+   86  git pull origin main
+   89  git merge origin/main --allow-unrelated-histories
+   90  git add .
+   91  git merge origin/main --allow-unrelated-histories
+   92  git branch -l
+   93  git checkout main
+   94  git merge origin/main --allow-unrelated-histories
+   95  git status -s -v
+   96  git add -A
+   97  git status -s -v
+   98  git commit -m "Previo al pull de hoja css 1"
+   99  git status -s -v
+  100  git merge origin/main --allow-unrelated-histories
+  108  git branch -l
+  116  git checkout main
+  117  git status -s -v
+  119  git branch -l
+  120  git pull origin main
+  122  git status -s -v
+  123  git status
+  124  git config -l
+  125  git remote add origin git@gitlab.com:henryc2v/di-practico-js.git
+  126  git log
+  127  git log --stat
+  128  git statys
+  129  git status
+  130  git add prueba-previaJS.html
+  131  git status -s -v
+  132  git add .
+  133  git status -s -v
+  134  git add -A
+  135  git status -s -v
+  136  git commit -m "Previo luego de pull, agregando brs"
+  137  git status -s -v
+  140  cat gitcomandos2.txt |grep push
+  141  git push -uf origin main
+  143  git status -s -v
+  146  git status -s -v
+  153  git status -s -v
+   35  d git/mirepo_python/peliculas
+   37  cd git/mirepo_python/peliculas
+   68  git status
+   69  git log
+   70  git config
+   71  git config --get
+   72  git config -l
+   73  git fetch origin learning
+   74  git branch -l
+   75  git fetch origin main
+   76  git checkout -b learning
+   77  git branch -l
+   78  git fetch origin learning
+   80  git pull origin learning
+   81  git pull origin main
+   82  git status
+   83  git add -A
+   84  git pull origin main
+   85  git commit -m "Previo al pull de hoja css"
+   86  git pull origin main
+   89  git merge origin/main --allow-unrelated-histories
+   90  git add .
+   91  git merge origin/main --allow-unrelated-histories
+   92  git branch -l
+   93  git checkout main
+   94  git merge origin/main --allow-unrelated-histories
+   95  git status -s -v
+   96  git add -A
+   97  git status -s -v
+   98  git commit -m "Previo al pull de hoja css 1"
+   99  git status -s -v
+  100  git merge origin/main --allow-unrelated-histories
+  108  git branch -l
+  116  git checkout main
+  117  git status -s -v
+  119  git branch -l
+  120  git pull origin main
+  122  git status -s -v
+  123  git status
+  124  git config -l
+  125  git remote add origin git@gitlab.com:henryc2v/di-practico-js.git
+  126  git log
+  127  git log --stat
+  128  git statys
+  129  git status
+  130  git add prueba-previaJS.html
+  131  git status -s -v
+  132  git add .
+  133  git status -s -v
+  134  git add -A
+  135  git status -s -v
+  136  git commit -m "Previo luego de pull, agregando brs"
+  137  git status -s -v
+  140  cat gitcomandos2.txt |grep push
+  141  git push -uf origin main
+  143  git status -s -v
+  146  git status -s -v
+  153  git status -s -v
+  161  history |grep git >> gitcomandos2.txt
+  162  cat gitcomandos2.txt
+  164  git log --stat
+  168  git log --stat
+  169  git status -s -v
+  171  git add .
+  172  git status -s -v
+  174  git pull origin main
+  176  git status -s -v
+  181  git status -s -v
+  182  history |grep git
+  183  cat gitcomandos2.txt
+  184  history |grep git
