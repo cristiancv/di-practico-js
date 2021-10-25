@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triángulo Isosceles, Perímetro y Área</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Triángulo Isósceles, Ejercicio</h1>
+    <p>Este es el ejercicio se cálcula previamente la altura del triángulo, para luego
+      obtener su perímetro y área.</p>
+  </header>
+  <section>
+    <h2>Cálcula el área y perímetro de un Triángulo Isósceles.</h2>
+    <form action="">
+      <label for="inputLado"> Escribe el valor de lado.</label>
+      <input id="inputLado" name="inputLado" type="number" required="" placeholder="Ingrese número positivo" /><br>
+      <label for="inputBase"> Escribe el valor de la base.</label>
+      <input id="inputBase" name="inputBase" type="number" required="" placeholder="Ingrese número positivo" /><br>
+      <button type="button" onclick="calcularPerimetro()">
+        Cálcula el perímetro.
+      </button><br>
+      <button type="button" onclick="calcularArea()">Cálcula el área.</button><br>
+
+      <div class="contenedor" id="triangulo-respuesta">
+        <p id="respuesta-triangulo"> La respuesta Aquí</p>
+      </div>
+    </form>
+  </section>
+  <script type="text/javascript" src="./isosceles.js"></script>
+</body>
+
+</html>
