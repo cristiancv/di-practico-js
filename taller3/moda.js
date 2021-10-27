@@ -28,12 +28,12 @@ const calcularModa = (lista = []) => {
       listaCount[elemento] = 1;
     }
   });
-  const lista1Array = Object.entries(lista1Count).sort(function (
+  let lista1Array = Object.entries(listaCount).sort(function (
     elementoA,
     elementoB
   ) {
     return elementoA[1] - elementoB[1];
   });
-  const moda = lista1Array[lista1Array.length - 1];
+  let moda = lista1Array[lista1Array.length - 1];
   return `La moda es: ${moda}`;
 };
