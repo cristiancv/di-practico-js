@@ -35,5 +35,5 @@ const calcularModa = (lista = []) => {
     return elementoA[1] - elementoB[1];
   });
   const moda = lista1Array[lista1Array.length - 1];
-  return moda;
+  return `La moda es: ${moda}`;
 };
