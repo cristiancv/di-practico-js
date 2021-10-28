@@ -2,7 +2,7 @@ const salariosEcu = ecuador.map(function (personita) {
   return personita.salary;
 });
 
-const salariosEcuSorted = salarios.sort(function (salaryA, salaryB) {
+const salariosEcuSorted = salariosEcu.sort(function (salaryA, salaryB) {
   return salaryA - salaryB;
 });
 
@@ -28,4 +28,7 @@ function medianaSalarios(lista) {
     return personitaMitad;
   }
 }
+console.log(salariosEcuSorted);
+console.log(calcularMediaAritmetica(salariosEcuSorted));
+console.log("tipo de: " + typeof salariosEcuSorted);
 console.log(medianaSalarios(salariosEcuSorted));
