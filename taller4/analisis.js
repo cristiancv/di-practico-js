@@ -9,7 +9,7 @@ const salariosEcuSorted = salariosEcu.sort(function (salaryA, salaryB) {
 function esPar(numero) {
   return numero % 2 === 0;
 }
-function calcularMediaAritmetica(lista) {
+function calcularMediaAritmetica(l~~ista) {
   const sumaLista = lista.reduce(function (valorAcumulado = 0, nuevoElemento) {
     return valorAcumulado + nuevoElemento;
   });
@@ -17,7 +17,7 @@ function calcularMediaAritmetica(lista) {
   return promedioLista;
 }
 function medianaSalarios(lista) {
-  const mitad = parseInt(lista.lenght / 2);
+  const mitad = parseInt(lista.length / 2);
   if (esPar(lista.lenght)) {
     const personitaMitad1 = lista[mitad - 1];
     const personitaMitad2 = lista[mitad];
@@ -28,7 +28,5 @@ function medianaSalarios(lista) {
     return personitaMitad;
   }
 }
-console.log(salariosEcuSorted);
-console.log(calcularMediaAritmetica(salariosEcuSorted));
-console.log("tipo de: " + typeof salariosEcuSorted);
+
 console.log(medianaSalarios(salariosEcuSorted));
