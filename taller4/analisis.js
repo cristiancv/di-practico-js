@@ -28,5 +28,13 @@ function medianaSalarios(lista) {
     return personitaMitad;
   }
 }
+const medianaGeneralEcu = medianaSalarios(salariosEcuSorted);
 
-console.log(medianaSalarios(salariosEcuSorted));
+//Mediana del Top 10%
+
+const spliceStart = (salariosEcuSorted.length * 90) / 100;
+const spliceCount = salariosEcuSorted.length - spliceStart;
+const salariosEcuTop10 = salariosEcuSorted.splice(spliceStart, spliceCount);
+
+const medianaEcuTop10 = medianaSalarios(salariosEcuTop10);
+console.log(medianaGeneralEcu, medianaEcuTop10);
