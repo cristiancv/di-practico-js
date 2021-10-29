@@ -9,7 +9,7 @@ const salariosEcuSorted = salariosEcu.sort(function (salaryA, salaryB) {
 function esPar(numero) {
   return numero % 2 === 0;
 }
-function calcularMediaAritmetica(l~~ista) {
+function calcularMediaAritmetica(lista) {
   const sumaLista = lista.reduce(function (valorAcumulado = 0, nuevoElemento) {
     return valorAcumulado + nuevoElemento;
   });
