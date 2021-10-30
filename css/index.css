@@ -1,0 +1,22 @@
+/*Archivo de estilos CSS para el html de prueba previa.*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 67%;
+}
+body {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgb(70, 197, 108);
+  color: bisque;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.6rem;
+}
+h1 {
+  color: yellow;
+  text-align: center;
+  font-size: 3rem;
+}
