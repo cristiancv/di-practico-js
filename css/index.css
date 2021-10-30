@@ -11,10 +11,10 @@ body {
   font-size: 1.6rem;
 }
 .cabecera {
-  height: 10vh;
+  height: 20vh;
   text-align: center;
   font-size: 1.4rem;
-  background-color: rgb(95, 102, 199);
+  background-color: rgb(10, 66, 27);
 }
 h1 {
   color: white;
@@ -27,12 +27,33 @@ h1 {
   float: right;
 }
 .navegacion li {
+  color: rgb(10, 66, 27);
+  background-color: floralwhite;
   display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
 }
 .navegacion li a {
   text-decoration: none;
-  color: floralwhite;
+  /*color: floralwhite;*/
+  font-size: 1.6rem;
+}
+.contenidos {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  width: 70vw;
+  border: 2px dashed black;
+  text-align: center;
+  align-content: center;
+}
+.contenidos li {
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.contenidos li a {
+  font-family: fantasy;
+  font-weight: normal;
   font-size: 1.6rem;
 }
