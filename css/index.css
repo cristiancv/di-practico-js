@@ -8,7 +8,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 .cabecera {
   height: 20vh;
@@ -17,8 +17,8 @@ body {
   background-color: rgb(10, 66, 27);
 }
 h1 {
-  color: white;
-  font-size: 3rem;
+  color:yellow;
+  font-size: 3.5rem;
 }
 .navegacion {
   position: relative;
@@ -35,25 +35,23 @@ h1 {
 }
 .navegacion li a {
   text-decoration: none;
-  /*color: floralwhite;*/
   font-size: 1.6rem;
 }
 .contenidos {
-  display: flex;
   padding: 10px;
-  margin: 10px;
-  width: 70vw;
+  margin: 20px auto;
+  width: 40vw;
   border: 2px dashed black;
+  background-color: orange;
   text-align: center;
-  align-content: center;
 }
 .contenidos li {
   list-style-type: none;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
 }
 .contenidos li a {
   font-family: fantasy;
   font-weight: normal;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
