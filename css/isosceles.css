@@ -1,0 +1,51 @@
+/*Archivo de estilos CSS para el html de Figuras.*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.8rem;
+  background-color: rgb(10, 66, 27);
+  color: bisque;
+  font-family: fantasy;
+}
+.encabezado {
+  padding: 20px;
+  text-align: center;
+}
+h1,
+h2 {
+  color: yellow;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+.seccion {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  min-width: 400px;
+  color: darkblue;
+  border: 2px dashed white;
+  background-color: orange;
+  text-align: justify;
+  align-items: center;
+}
+.contenedor {
+  color: rgb(10, 66, 27);
+  text-align: center;
+}
+button {
+  margin: 15px auto;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  background-color: rgb(10, 66, 27);
+}
