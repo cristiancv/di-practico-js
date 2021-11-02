@@ -25,6 +25,7 @@ h2 {
 
 h2 {
   font-size: 2.4rem;
+  text-align: justify;
 }
 .seccion {
   padding: 20px;
@@ -35,17 +36,29 @@ h2 {
   border: 2px dashed white;
   background-color: orange;
   text-align: justify;
-  align-items: center;
 }
 .contenedor {
   color: rgb(10, 66, 27);
   text-align: center;
 }
-button {
-  margin: 15px auto;
+form{
+  margin:20px;
+  padding: 20px;
+}
+form input{
+  padding: 5px;
+  margin: 5px;
+}
+form label{
+  padding: 20px;
+  margin: 20px;
+}
+form button {
+  margin: 10px auto;
   padding: 10px;
   border-radius: 10px;
   color: white;
   text-align: center;
   background-color: rgb(10, 66, 27);
+  display: block;
 }
