@@ -43,10 +43,11 @@ form {
   color: darkblue;
 }
 .contenedor {
-  background-color: white;
   color: rgb(10, 66, 27);
 }
 button {
   padding: 10px;
   border-radius: 10px;
+  color: white;
+  background-color: rgb(10, 66, 27);
 }
