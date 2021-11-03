@@ -5,23 +5,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="..//css/descuentos1.css">
   <title>Porcentajes y descuentos en curso práctico de JS |Platzi</title>
 </head>
 
 <body>
-  <h1>Porcentajes y Descuentos.</h1>
-  <header>Este es el taller 2 práctico de JavaScript.</header>
-  <section>
-    <form action="
-    ">
+  <header class="encabezado"> 
+  <h1>Porcentajes y Descuentos.</h1><br>
+  <p>Este es el taller 2 práctico de JavaScript. </p>
+  </header><br>
+  <section id="main-descuentos" class="seccion">
+    <form action="">
       <label for="input-precio">
-        Ingrese el Precio del producto.
+        Ingrese el precio del producto.
       </label>
       <input type="number" id="input-precio" required="" placeholder="Ingrese Precio" /><br>
-      <label for="input-descuento">Ingrese el valor de descuento del producto.</label>
-      <input type="number" id="input-descuento" required="" placeholder="Descuento" /><br>
-      <button type="button" onclick="obtenerPrecioFinal()"> Calcular precio a pagar.</button>
+      <label for="input-descuento">Ingrese el valor de descuento.</label>
+      <input type="number" id="input-descuento" required="" placeholder="Descuento" /><br><br>
+      <button type="button" onclick="obtenerPrecioFinal()"> Calcular precio a pagar.</button><br>
+      <div class="contenedor" id="descuento-respuesta">
       <p id="resultado">El precio con descuento o precio final es de: </p>
+      </div>
     </form>
   </section>
   <script type="text/javascript" src="./descuentos.js">  </script>
