@@ -1,13 +1,13 @@
 // Ejercicio para aplicar descuentos en base a cupones
 
 //funciones Lógicas
-const calcularPrecioFinal = (precio = 0 || precio, cupon = 0 || cupon) => {
+const calcularPrecioFinal = (precio = 0 || precio, cupon = "" || cupon) => {
   let descuento = 0;
-  if (cupon === 1) {
+  if (cupon === "cupon_1") {
     descuento = 10;
-  } else if (cupon === 2) {
+  } else if (cupon === "cupon_2") {
     descuento = 12;
-  } else if (cupon === 3) {
+  } else if (cupon === "cupon_3") {
     descuento = 15;
   }
   let porcentajeFinal = 100 - descuento;
@@ -19,16 +19,18 @@ const calcularPrecioFinal = (precio = 0 || precio, cupon = 0 || cupon) => {
 function totalAPagar() {
   let inputPrecio = document.getElementById("input-precio");
   let precio = parseFloat(inputPrecio.value);
-  let inputCupon = document.getElementById("input-cupon");
-  let cupon = parseFloat(inputCupon.value);
-  if (isNaN(precio) || isNaN(cupon)) {
+  let selectCupon = document.getElementById("select-cupon");
+  let valor_cupon = selectCupon.value;
+  let texto_cupon = selectCupon.options;
+  texto_cupon=texto_cupon[selectCupon.selectedIndex].text;
+  if (isNaN(precio)) {
     inputPrecio.value = "";
-    inputCupon.value = "";
-    return alert("El precio y cupón deben ser números");
+    selectCupon.value = "";
+    return alert("El precio debe ser un número.");
   }
-  let preciofinal = calcularPrecioFinal(precio, cupon);
+  let preciofinal = calcularPrecioFinal(precio, valor_cupon);
   let presultado = document.getElementById("resultado");
-  presultado.textContent = `El precio total a pagar con cupón: ${cupon}, es de: $${preciofinal.toFixed(
+  presultado.textContent = `El precio total con ${texto_cupon}, es de: $${preciofinal.toFixed(
     2
   )}`;
 }
