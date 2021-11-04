@@ -12,3 +12,14 @@ function calcularMediaAritmetica(lista) {
   const promedioLista = sumaLista / lista.length;
   return promedioLista;
 }
+const listanumeros= new Array();
+const agregarNumero = (numero=0 ||numero) =>{
+  if(typeof numero!== "number") return alert(`El dato ingresado: ${numero} debe ser un número`);
+  if(typeof numero=== undefined) return alert("No ha ingresado ningún dato"); 
+    listanumeros.push(numero);
+    console.info(`Se agrego el número: ${numero}`);
+    return listanumeros;
+}
+const agregarCeldas= (lista=new Array()) => {
+
+}

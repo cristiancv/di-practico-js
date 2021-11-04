@@ -12,6 +12,7 @@
     background-color: rgb(10, 66, 27);
     color: bisque;
     font-family: fantasy;
+    line-height: 3rem;
   }
   .encabezado {
     padding: 20px;
@@ -29,7 +30,7 @@
     color: darkblue;
     border: 2px dashed white;
     background-color: orange;
-    text-align: left;
+    text-align: center;
   }
   .contenedor {
     color: rgb(10, 66, 27);
