@@ -35,6 +35,7 @@
   .contenedor {
     color: rgb(10, 66, 27);
     text-align: center;
+    font-size: 2rem;
   }
   form{
     margin:10px;
@@ -55,4 +56,13 @@
     color: white;
     text-align: center;
     background-color: rgb(10, 66, 27);
+  }
+  #tabla-numeros{
+    font-family: monospace;
+    color:black;
+  }
+  thead,th{
+    color:yellow;
+    padding:10px;
+    margin:10px;
   }

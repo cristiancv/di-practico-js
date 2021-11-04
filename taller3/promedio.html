@@ -16,24 +16,23 @@
 <form action="">
   <label for="numero">Ingrese número a agregar:</label>
   <input type="number" name="numero" id="numero" required />
-  <button type="button">Agregar</button>
-  <button type="button">Calcular Promedio.</button>
+  <button type="button" onclick="agregarNumeroBtn()">Agregar</button>
+  <button type="button"onclick="promedioBoton()">Calcular Promedio.</button>
 </form>
+<div class="contenedor">
+  <p id="resultado">Promedio es:</p>
+  </div>
 <table class="tabla" border=1 id="tabla-numeros">
   <thead>
     <tr>
       <th>Números:</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-    </tr>
+  <tbody id="tabla-body">
+    <!-- aqui debe ir un tr y un td-->
   </tbody>
 </table><br>
-<div class="contenedor">
-<p id="resultado">Promedio es:</p>
-</div>
+
 </section>
   <script src="./promedio.js"></script>
 </body>
