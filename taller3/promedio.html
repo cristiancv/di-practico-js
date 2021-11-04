@@ -5,11 +5,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Promedio | Curso Práctico de Javascript de Platzi</title>
+  <link rel="stylesheet" href="../css/promedio.css">
 </head>
-<h1>Promedio</h1>
-
 <body>
-
+<header class="encabezado" id="cabecera">
+<h1>Promedio</h1><hr><br>
+<h3>En este ejercicio debe agregar varios números para calcular su promedio (media aritmética).</h3>
+</header>
+<section id="seccion-promedio" class="seccion">
+<form action="">
+  <label for="numero">Ingrese número a agregar:</label>
+  <input type="number" name="numero" id="numero" required />
+  <button type="button">Agregar</button>
+  <button type="button">Calcular Promedio.</button>
+</form>
+<table class="tabla" id="tabla-numeros">
+  <thead>
+    <tr>
+      <th>Ind</th>
+      <th>Número.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>A</td>
+    </tr>
+  </tbody>
+</table><br>
+<div class="contenedor">
+<p id="resultado">Promedio es:</p>
+</div>
+</section>
   <script src="./promedio.js"></script>
 </body>
 
