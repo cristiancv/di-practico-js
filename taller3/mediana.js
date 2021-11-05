@@ -30,9 +30,11 @@ function calcularMediana(lista = []) {
 
     const promedioElemento1y2 = calcularMediaAritmetica([elemento1, elemento2]);
     mediana = promedioElemento1y2;
-    return `La mediana es: ${mediana}`;
+    //return `La mediana es: ${mediana}`;
   } else {
+    mediana = listaOrdenada1[mitadLista];
   }
+  return mediana;
 }
 const agregarNumero = (numero = 0 || numero) => {
   if (typeof numero !== "number")
