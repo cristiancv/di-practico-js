@@ -5,11 +5,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/moda.css">
   <title>Moda | Curso práctico de Javascript |Platzi</title>
 </head>
 
 <body>
-  <h1>Moda</h1>
+  <header class="encabezado" id="cabecera">
+    <h1>Moda.</h1>
+    <hr><br>
+    <h3>En este ejercicio debe agregar varios números para calcular el valor de la Moda.</h3>
+  </header>
+  <section id="seccion-moda" class="seccion">
+    <form action="">
+      <label for="numero">Ingrese número a agregar:</label>
+      <input type="number" name="numero" id="numero" required />
+      <button type="button" onclick="agregarNumeroBtn()">Agregar</button>
+      <button type="button" onclick="modaBoton()">Calcular Moda.</button>
+    </form>
+    <div class="contenedor">
+      <p id="resultado">La Moda es:</p>
+    </div><br>
+    <table class="tabla" border=1 id="tabla-numeros">
+      <thead>
+        <tr>
+          <th>Números:</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-body">
+        <!-- aqui debe ir un tr y un td-->
+      </tbody>
+    </table><br>
+
+  </section>
   <script src="./moda.js"></script>
 </body>
 
