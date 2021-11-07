@@ -4,11 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/salarios.css">
   <title>Salarios |Curso JS práctico</title>
 </head>
 
 <body>
-  <h1>Salarios.</h1>
+  <header class="encabezado" id="cabecera">
+    <h1>Salarios y su mediana.</h1>
+    <hr><br>
+    <h3>En este ejercicio debe agregar varios registros "nombre y salario" para calcular la Mediana.</h3>
+  </header>
+  <section id="seccion-salarios" class="seccion">
+    <form action="">
+      <label for="nombre">Ingrese nombre:</label>
+      <input type="text" name="nombre" id="nombre" required /><br>
+      <label for="salario">Ingrese salario:</label>
+      <input type="number" name="salario" id="salario" required /><br><br>
+      <button type="button" onclick="agregarNumeroBtn()">Agregar fila</button>
+      <button type="button" onclick="medianaBoton()">Calcular Mediana.</button>
+    </form>
+    <div class="contenedor">
+      <p id="resultado">La Mediana de los salarios es:</p>
+    </div><br>
+    <table class="tabla" border=1 id="tabla-datos">
+      <thead>
+        <tr>
+          <th>Nombre:</th>
+          <th>Salario:</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-body">
+        <!-- aqui debe ir un tr y dos td-->
+      </tbody>
+    </table><br>
+
+  </section>
   <script src="./salarios.js"></script>
   <script src="./analisis.js"></script>
 </body>
