@@ -5,6 +5,11 @@ const salariosEcu = ecuador.map(function (personita) {
 const salariosEcuSorted = salariosEcu.sort(function (salaryA, salaryB) {
   return salaryA - salaryB;
 });
+const mitabla = document.getElementById("tabla-datos");
+const tablabody = document.getElementById("tabla-body");
+const campoNumero = document.getElementById("salario");
+const campoNombre = document.getElementById("nombre");
+const listanumeros = new Array();
 
 function esPar(numero) {
   return numero % 2 === 0;
@@ -40,35 +45,41 @@ const medianaEcuTop10 = medianaSalarios(salariosEcuTop10);
 console.log(medianaGeneralEcu, medianaEcuTop10);
 
 //Funciones para llenar las celdas
-const agregarNumero = (numero = 0 || numero) => {
+const agregarDato = (nombre, numero = 0 || numero) => {
+  //if (typeof nombre !== "string") return alert(`El nombre debe ser un texto`);
+  if (typeof nombre === undefined) return alert("No ha definido el nombre");
   if (typeof numero !== "number")
     return alert(`El dato ingresado: ${numero} debe ser un número`);
-  if (typeof numero === undefined) return alert("No ha ingresado ningún dato");
+  if (typeof numero === undefined) return alert("No ha definido el salario");
   listanumeros.push(numero);
-  agregarCelda(numero);
+  agregarFila(nombre, numero);
   return listanumeros;
+  //Esta función agrega el numero recibido al arreglo listanumeros y a la celda correspondiente en la tabla
 };
-const agregarCelda = (numero = 0 || numero) => {
+const agregarFila = (nombre = "", numero = 0) => {
   let fila = document.createElement("tr");
-  let dato = document.createElement("td");
-  dato.appendChild(document.createTextNode(numero));
-  fila.appendChild(dato);
+  let name = document.createElement("td");
+  name.appendChild(document.createTextNode(nombre));
+  fila.appendChild(name);
+  let num = document.createElement("td");
+  num.appendChild(document.createTextNode(numero));
+  fila.appendChild(num);
   tablabody.appendChild(fila);
+  //Está función agrega los datos correspondientes a una nueva fila en la tabla
 };
-function agregarNumeroBtn() {
-  let numleido = parseFloat(document.getElementById("numero").value);
+function agregarFilaBtn() {
+  let numleido = parseFloat(campoNumero.value);
   if (isNaN(numleido)) {
-    camponumero.value = "";
-    return alert("El dato debe ser un número.");
+    campoNumero.value = "";
+    return alert("El campo debe ser un número: ${numleido}.");
   } else {
-    agregarNumero(numleido);
-    camponumero.value = "";
+    agregarDato(numleido, campoNombre.value);
+    campoNumero.value = "";
+    campoNombre.value = "";
   }
 }
 function modaBoton() {
-  let moda = calcularModa(listanumeros);
+  let mediana = medianaSalarios(listanumeros);
   let resultado = document.getElementById("resultado");
-  let num = moda[0];
-  let veces = moda[1];
-  resultado.textContent = `La Moda es: ${num}, ${veces} veces.`;
+  resultado.textContent = `La Mediana de salarios es: ${mediana}`;
 }
