@@ -61,6 +61,7 @@ form button {
   font-family: monospace;
   color: black;
   background-color: bisque;
+  text-align: center;
 }
 thead,
 th {

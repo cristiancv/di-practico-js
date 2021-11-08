@@ -46,7 +46,7 @@ console.log(medianaGeneralEcu, medianaEcuTop10);
 
 //Funciones para llenar las celdas
 const agregarDato = (nombre, numero = 0 || numero) => {
-  //if (typeof nombre !== "string") return alert(`El nombre debe ser un texto`);
+  if (typeof nombre !== "string") return alert(`El nombre debe ser un texto`);
   if (typeof nombre === undefined) return alert("No ha definido el nombre");
   if (typeof numero !== "number")
     return alert(`El dato ingresado: ${numero} debe ser un número`);
@@ -73,12 +73,12 @@ function agregarFilaBtn() {
     campoNumero.value = "";
     return alert("El campo debe ser un número: ${numleido}.");
   } else {
-    agregarDato(numleido, campoNombre.value);
+    agregarDato(campoNombre.value, numleido);
     campoNumero.value = "";
     campoNombre.value = "";
   }
 }
-function modaBoton() {
+function medianaBoton() {
   let mediana = medianaSalarios(listanumeros);
   let resultado = document.getElementById("resultado");
   resultado.textContent = `La Mediana de salarios es: ${mediana}`;
