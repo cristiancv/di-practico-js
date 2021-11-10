@@ -17,7 +17,7 @@ body {
   background-color: rgb(10, 66, 27);
 }
 h1 {
-  color:yellow;
+  color: yellow;
   font-size: 3.5rem;
 }
 .navegacion {
@@ -32,7 +32,53 @@ h1 {
   display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
+  list-style: none;
 }
+.navegacion li:hover {
+  color: #aaa073;
+  cursor: pointer;
+}
+.navegacion ul ul {
+  display: none;
+  position: absolute;
+  top: 49px;
+  background: #333;
+  color: #fff;
+  padding: 5px 0px 5px 5px;
+  margin: 0;
+}
+.navegacion ul ul li {
+  float: left;
+  color: #fff;
+  width: 100%;
+  margin: 2% 0%;
+}
+.navegacion ul ul li a {
+  color: #fff;
+}
+.navegacion ul ul li a:hover {
+  color: #aaa073;
+  cursor: pointer;
+}
+.navegacion ul li:hover ul ul,
+.navegacion ul li:hover ul ul ul,
+.navegacion ul li.iehover ul ul,
+.navegacion ul li.iehover ul ul ul {
+  display: none;
+  cursor: pointer;
+}
+
+.navegacion ul li:hover ul,
+.navegacion ul ul li:hover ul,
+.navegacion ul ul ul li:hover ul,
+.navegacion ul li.iehover ul,
+.navegacion ul ul li.iehover ul,
+.navegacion ul ul ul li.iehover ul {
+  display: block;
+  cursor: pointer;
+}
+/* hasta aqui las copiadas*/
+
 .navegacion li a {
   text-decoration: none;
   font-size: 1.6rem;
