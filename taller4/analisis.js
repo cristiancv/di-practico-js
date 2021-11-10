@@ -22,11 +22,11 @@ function calcularMediaAritmetica(lista) {
   return promedioLista;
 }
 function medianaSalarios(lista) {
-  const listaOrd = lista.sort(function (a, b) {
+  let listaOrd = lista.sort(function (a, b) {
     return a - b;
   });
   const mitad = parseInt(listaOrd.length / 2);
-  if (esPar(listaOrd.lenght)) {
+  if (esPar(listaOrd.length)) {
     const personitaMitad1 = listaOrd[mitad - 1];
     const personitaMitad2 = listaOrd[mitad];
     const mediana = calcularMediaAritmetica([personitaMitad1, personitaMitad2]);
@@ -45,7 +45,7 @@ const spliceCount = salariosEcuSorted.length - spliceStart;
 const salariosEcuTop10 = salariosEcuSorted.splice(spliceStart, spliceCount);
 
 const medianaEcuTop10 = medianaSalarios(salariosEcuTop10);
-console.log(medianaGeneralEcu, medianaEcuTop10);
+//console.log(medianaGeneralEcu, medianaEcuTop10);
 
 //Funciones para llenar las celdas
 const agregarDato = (nombre, numero = 0 || numero) => {
