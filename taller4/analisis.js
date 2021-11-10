@@ -22,14 +22,17 @@ function calcularMediaAritmetica(lista) {
   return promedioLista;
 }
 function medianaSalarios(lista) {
-  const mitad = parseInt(lista.length / 2);
-  if (esPar(lista.lenght)) {
-    const personitaMitad1 = lista[mitad - 1];
-    const personitaMitad2 = lista[mitad];
+  const listaOrd = lista.sort(function (a, b) {
+    return a - b;
+  });
+  const mitad = parseInt(listaOrd.length / 2);
+  if (esPar(listaOrd.lenght)) {
+    const personitaMitad1 = listaOrd[mitad - 1];
+    const personitaMitad2 = listaOrd[mitad];
     const mediana = calcularMediaAritmetica([personitaMitad1, personitaMitad2]);
     return mediana;
   } else {
-    const personitaMitad = lista[mitad];
+    const personitaMitad = listaOrd[mitad];
     return personitaMitad;
   }
 }
