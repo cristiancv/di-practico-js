@@ -30,23 +30,29 @@ h1 {
   color: rgb(10, 66, 27);
   background-color: floralwhite;
   display: inline-block;
-  padding-left: 10px;
+  padding-left: 20px;
   padding-right: 10px;
+  margin-right: 10px;
   list-style: none;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 .navegacion li:hover {
-  color: #aaa073;
+  color: blue;
+  background-color: lightblue;
   cursor: pointer;
 }
 .navegacion ul ul {
   display: none;
-  position: absolute;
-  top: 49px;
+  /* position: absolute; */
+  /* top: 49px; */
   background: #333;
   color: #fff;
   padding: 5px 0px 5px 5px;
   margin: 0;
 }
+
+/*
 .navegacion ul ul li {
   float: left;
   color: #fff;
@@ -76,7 +82,7 @@ h1 {
 .navegacion ul ul ul li.iehover ul {
   display: block;
   cursor: pointer;
-}
+} */
 /* hasta aqui las copiadas*/
 
 .navegacion li a {
