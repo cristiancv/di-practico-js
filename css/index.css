@@ -20,42 +20,36 @@ h1 {
   color: yellow;
   font-size: 3.5rem;
 }
-
 /*Sección del menú de navegación */
-.navegacion, #menu {
+ul#menu {
   position: relative;
-  list-style-type: none;
   text-align: right;
   float: right;
 }
-.navegacion li {
+ul#menu li {
   color: rgb(10, 66, 27);
   background-color: floralwhite;
   display: inline-block;
   padding-left: 20px;
   padding-right: 10px;
   margin-right: 10px;
-  list-style: none;
   font-size: 1.8rem;
   font-weight: bold;
+  list-style: none;
 }
-.navegacion li:hover {
+ul#menu ul li {
+  background-color: yellow;
+}
+ul#menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+ul#menu li:hover {
   color: blue;
   background-color: lightblue;
   cursor: pointer;
 }
-.navegacion ul ul li a{
-  display: none;
-  background: #333;
-  color: #fff;
-  padding: 5px 5px 5px 5px;
-  margin: 10px;
-  text-decoration: none;
-  font-size: 1.6rem;
-}
-.navegacion ul ul:hover li a{
-  display: block;
-}
+
 /*Sección de contenido principal */
 .contenidos {
   padding: 10px;
