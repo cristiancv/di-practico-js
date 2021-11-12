@@ -20,7 +20,9 @@ h1 {
   color: yellow;
   font-size: 3.5rem;
 }
-.navegacion {
+
+/*Sección del menú de navegación */
+.navegacion, #menu {
   position: relative;
   list-style-type: none;
   text-align: right;
@@ -42,53 +44,19 @@ h1 {
   background-color: lightblue;
   cursor: pointer;
 }
-.navegacion ul ul {
+.navegacion ul ul li a{
   display: none;
-  /* position: absolute; */
-  /* top: 49px; */
   background: #333;
   color: #fff;
-  padding: 5px 0px 5px 5px;
-  margin: 0;
-}
-
-/*
-.navegacion ul ul li {
-  float: left;
-  color: #fff;
-  width: 100%;
-  margin: 2% 0%;
-}
-.navegacion ul ul li a {
-  color: #fff;
-}
-.navegacion ul ul li a:hover {
-  color: #aaa073;
-  cursor: pointer;
-}
-.navegacion ul li:hover ul ul,
-.navegacion ul li:hover ul ul ul,
-.navegacion ul li.iehover ul ul,
-.navegacion ul li.iehover ul ul ul {
-  display: none;
-  cursor: pointer;
-}
-
-.navegacion ul li:hover ul,
-.navegacion ul ul li:hover ul,
-.navegacion ul ul ul li:hover ul,
-.navegacion ul li.iehover ul,
-.navegacion ul ul li.iehover ul,
-.navegacion ul ul ul li.iehover ul {
-  display: block;
-  cursor: pointer;
-} */
-/* hasta aqui las copiadas*/
-
-.navegacion li a {
+  padding: 5px 5px 5px 5px;
+  margin: 10px;
   text-decoration: none;
   font-size: 1.6rem;
 }
+.navegacion ul ul:hover li a{
+  display: block;
+}
+/*Sección de contenido principal */
 .contenidos {
   padding: 10px;
   margin: 20px auto;
