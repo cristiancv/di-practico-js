@@ -23,31 +23,43 @@ h1 {
 /*Sección del menú de navegación */
 ul#menu {
   position: relative;
-  text-align: right;
+  text-align: left;
   float: right;
+  display:flex;
 }
 ul#menu li {
   color: rgb(10, 66, 27);
   background-color: floralwhite;
-  display: inline-block;
-  padding-left: 20px;
-  padding-right: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right:10px;
+  margin-left: 10px;
   font-size: 1.8rem;
   font-weight: bold;
   list-style: none;
+  width: 20vw;
 }
-ul#menu ul li {
+ul#menu li .submenu{
   background-color: yellow;
+  display:flex;
+  flex-flow: column;
 }
-ul#menu ul li a {
+.submenu li{
+  padding: 2px;
+  margin: 2px;
+}
+.submenu li a {
   text-decoration: none;
   color: black;
+  display: none;
+  margin:0;
+  padding: .6rem .5rem .4rem;
+  line-height: 1rem;
 }
-ul#menu li:hover {
+ul#menu li:hover, #menu li .submenu{
   color: blue;
   background-color: lightblue;
   cursor: pointer;
+  display: block;
 }
 
 /*Sección de contenido principal */
