@@ -38,24 +38,15 @@ ul#menu li {
   list-style: none;
   width: 20vw;
 }
-ul#menu li .submenu{
-  background-color: yellow;
-  display:flex;
-  flex-flow: column;
-}
-.submenu li{
-  padding: 2px;
-  margin: 2px;
-}
 .submenu li a {
   text-decoration: none;
   color: black;
-  display: none;
+  /* display: none; */
   margin:0;
   padding: .6rem .5rem .4rem;
   line-height: 1rem;
 }
-ul#menu li:hover, #menu li .submenu{
+ul#menu li:hover{
   color: blue;
   background-color: lightblue;
   cursor: pointer;
