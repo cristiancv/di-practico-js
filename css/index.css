@@ -25,34 +25,41 @@ ul#menu {
   position: relative;
   text-align: left;
   float: right;
-  display:flex;
+  display: flex;
 }
 ul#menu li {
   color: rgb(10, 66, 27);
-  background-color: floralwhite;
-  padding-left: 10px;
-  padding-right:10px;
-  margin-left: 10px;
+  background-color:yellow;
+  padding-left: 0px;
   font-size: 1.8rem;
   font-weight: bold;
   list-style: none;
-  width: 20vw;
+  width: 24vw;
+}
+.submenu{
+  margin-left: 0px;
+  padding-left: 0px;
+  width: 24vw;
+}
+.submenu li{
+  margin-left: 0px;
+  padding-left: 0px;
+  width: 24vw;
 }
 .submenu li a {
   text-decoration: none;
   color: black;
+  width: 25vw;
+  margin-left: 0px;
+  padding-left: 0px;
   /* display: none; */
-  margin:0;
-  padding: .6rem .5rem .4rem;
-  line-height: 1rem;
 }
-ul#menu li:hover{
+ ul#menu li:hover {
   color: blue;
   background-color: lightblue;
   cursor: pointer;
   display: block;
 }
-
 /*Sección de contenido principal */
 .contenidos {
   padding: 10px;
