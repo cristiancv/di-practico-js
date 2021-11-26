@@ -11,7 +11,7 @@ body {
   font-size: 2rem;
 }
 .cabecera {
-  height: 20vh;
+  height: 25vh;
   text-align: center;
   font-size: 1.4rem;
   background-color: rgb(10, 66, 27);
@@ -21,30 +21,36 @@ h1 {
   font-size: 3.5rem;
 }
 /*Sección del menú de navegación */
+.navegacion{
+  clear:both;
+  position: relative;
+  left:20%;
+  width: 70vw;
+}
 ul#menu {
   position: relative;
   text-align: left;
   float: right;
   display: flex;
 }
-ul#menu li {
+#menu li {
   color: rgb(10, 66, 27);
-  background-color:yellow;
-  padding-left: 0px;
+  background-color:yellow;  
   font-size: 1.8rem;
   font-weight: bold;
-  list-style: none;
-  width: 24vw;
+  list-style: none;  
+  display:flex;
+  flex-flow: row;
 }
 .submenu{
+  display:flex;
   margin-left: 0px;
   padding-left: 0px;
-  width: 24vw;
+  flex-flow: row;
 }
 .submenu li{
   margin-left: 0px;
   padding-left: 0px;
-  width: 24vw;
 }
 .submenu li a {
   text-decoration: none;
@@ -52,7 +58,6 @@ ul#menu li {
   width: 25vw;
   margin-left: 0px;
   padding-left: 0px;
-  /* display: none; */
 }
  ul#menu li:hover {
   color: blue;
