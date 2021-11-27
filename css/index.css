@@ -26,10 +26,11 @@ h1 {
 }
 #menu{
   display:flex;
-  align-content: center;
+  align-content: flex-start;
   justify-content: center;
   align-items: flex-start;
   flex-direction: row;
+  text-align:left;
 }
 #menu li {
   color: rgb(10, 66, 27);
@@ -40,12 +41,11 @@ h1 {
   padding-right: 10px;
 }
 .submenu{
-  margin-left: 0px;
-  padding-left: 0px;
-}
-.submenu li{
-  margin-left: 0px;
-  padding-left: 0px;
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .submenu li a {
   text-decoration: none;
