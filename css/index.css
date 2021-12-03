@@ -50,13 +50,33 @@ h1 {
 .submenu li a {
   text-decoration: none;
   color: black;
+  display:none;
 }
-/*  ul#menu li:hover {
+.submenu li a:link{
+  color:#13bd21;
+}
+.submenu li a:visited{
+  color:blueviolet;
+}
+ /* ul#menu li a:hover {
   color: blue;
   background-color: lightblue;
   cursor: pointer;
-  display: block;
-} */
+}  */
+.submenu li a:hover {
+  color: blue;
+  background-color: lightblue;
+  cursor: pointer;
+}
+.submenu li a:active{
+  color: #0000FF;
+}
+/*Probando aún para despliegue de submenú items */
+#menu li:hover, #menu li:active, ul.submenu li:hover, ul.submenu li:active{
+  display:inline-flex;
+  background-color: floralwhite;
+}
+
 /*Sección de contenido principal */
 .contenidos {
   padding: 10px;
