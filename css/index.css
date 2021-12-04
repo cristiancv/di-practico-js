@@ -32,7 +32,7 @@ h1 {
   flex-direction: row;
   text-align:left;
 }
-#menu li {
+#menu li{
   color: rgb(10, 66, 27);
   background-color:yellow;  
   font-size: 1.8rem;
@@ -40,43 +40,44 @@ h1 {
   list-style: none;  
   padding-right: 10px;
 }
-.submenu{
+#menu li .submenu{
   display: flex;
   align-content: flex-start;
   justify-content: flex-start;
   flex-direction: column;
   align-items: flex-start;
 }
-.submenu li a {
+#menu li .submenu li{
+  background-color: white;
+}
+#menu li .submenu li a {
   text-decoration: none;
   color: black;
   display:none;
 }
-.submenu li a:link{
+#menu li .submenu li a:link{
   color:#13bd21;
 }
-.submenu li a:visited{
+#menu li .submenu li a:visited{
   color:blueviolet;
 }
- /* ul#menu li a:hover {
-  color: blue;
-  background-color: lightblue;
-  cursor: pointer;
-}  */
-.submenu li a:hover {
+#menu li .submenu li a:hover{
   color: blue;
   background-color: lightblue;
   cursor: pointer;
 }
-.submenu li a:active{
+#menu li .submenu li a:active{
   color: #0000FF;
 }
 /*Probando aún para despliegue de submenú items */
-#menu li:hover, #menu li:active, ul.submenu li:hover, ul.submenu li:active{
-  display:inline-flex;
+/* #menu li:hover, #menu li:active, #menu li ul.submenu li:hover, #menu li ul.submenu li:active{
+  display:block;
+  background-color: floralwhite;
+} */
+#menu li:hover, #menu li:hover .submenu li a{
+  display:block;
   background-color: floralwhite;
 }
-
 /*Sección de contenido principal */
 .contenidos {
   padding: 10px;
