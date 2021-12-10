@@ -15,6 +15,10 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.6rem;
 }
+.sec-indice{
+  text-align: center;
+  font-size: 2rem;
+}
 h1 {
   color: yellow;
   text-align: center;
