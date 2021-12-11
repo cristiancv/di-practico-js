@@ -29,9 +29,9 @@ h2 {
 .temario{
   background-color: yellow;
   position: fixed;
-  left:60px;
-  top:120px;
-  border: solid 2px green;
+  left:20px;
+  top:80px;
+  border: solid 3px green;
   width:15vw;
 }
 .temario h3, .temario li{
