@@ -16,6 +16,29 @@ body {
 .encabezado {
   text-align: center;
 }
+.sec-indice{
+  display: inline-block;
+  margin:20px auto;
+  padding:0px 10px;
+  color:yellow;
+  background-color: orange;
+  border: 2px solid floralwhite;
+  font-size: 2.4rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.sec-indice a{
+  text-decoration: none;
+  cursor:pointer;
+}
+.sec-indice a:visited{
+  color:yellow;
+}
+.sec-indice a:hover{
+  color:blue;
+  background-color: floralwhite;
+}
+
 h1,
 h2 {
   color: yellow;
@@ -25,27 +48,61 @@ h2 {
 h2 {
   font-size: 2.4rem;
 }
+/* Inicio para estilos del aside temario*/
+.temario{
+  background-color: yellow;
+  position: fixed;
+  left:20px;
+  top:80px;
+  border: solid 3px green;
+  width:15vw;
+}
+.temario h3, .temario li{
+  color:forestgreen;
+}
+.temario ul li{
+  list-style: none;
+  font-size: 2rem;
+}
+.temario ul li a{
+  text-decoration:tomato;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.temario ul li ul li:hover, ul li:hover{
+  background-color: white;
+  font-size: 2.4rem;
+}
+.temario ul li ul li a:hover, ul li a:hover{
+  color:blue;
+  font-size:1.8rem;
+}
+/*Final para estilos del aside temario */
 .seccion {
+  position: relative;
+  left:30px;
   padding: 10px;
   margin: 20px auto;
   /* width: 40vw;*/
   border: 2px dashed white;
   background-color: orange;
   text-align: center;
+  max-width: 600px;
+  min-width: 400px;
+  color: darkblue;
 }
 form {
   padding: 15px;
   margin: 10px;
 }
-.seccion {
-  max-width: 600px;
-  min-width: 400px;
-  color: darkblue;
-}
 .contenedor {
   color: rgb(10, 66, 27);
+  margin: 20px auto;
 }
 button {
+  cursor:pointer;
+  margin: 10px auto;
   padding: 10px;
   border-radius: 10px;
   color: white;
