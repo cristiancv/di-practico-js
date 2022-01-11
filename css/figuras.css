@@ -31,6 +31,9 @@ body {
   text-decoration: none;
   cursor:pointer;
 }
+.sec-indice a:link{
+  color:yellow;
+}
 .sec-indice a:visited{
   color:yellow;
 }
