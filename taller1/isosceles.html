@@ -11,17 +11,50 @@
 <body>
 
   <header class="encabezado">
-    <h1>Triángulo Isósceles, Ejercicio</h1>
+    <section class="sec-indice">
+      <a href="../index.html">Índice</a><br>
+    </section> 
+    <h1>Triángulo Isósceles, Ejercicio</h1><br>
     <p>Este es el ejercicio se cálcula previamente la altura del triángulo, para luego
       obtener su perímetro y área.</p>
   </header>
+  <aside class="temario">
+    <h3>Contenidos</h3>
+    <ul>
+      <li><a href="../index.html">Índice</a></li>
+      <li><a href="../prueba-previaJS.html">Prueba previa</a></li><br>
+      <li>Taller 1
+        <ul>
+          <li><a href="../taller1/figuras.html">Figuras geométricas</a></li>
+          <li><a href="../taller1/isosceles.html">Triángulo isósceles</a></li>
+        </ul>
+      </li><br>
+      <li>Taller 2
+        <ul>
+          <li><a href="../taller2/descuentos.html">Descuentos</a></li>
+          <li><a href="../taller2/descuentos-con-cupon.html">Descuentos con cupón</a></li>
+        </ul>
+      </li><br>
+      <li>Taller 3
+        <ul>
+          <li><a href="../taller3/promedio.html">Promedio</a></li>
+          <li><a href="../taller3/mediana.html">Mediana</a></li>
+          <li><a href="../taller3/moda.html">Moda</a></li>
+        </ul>
+      </li><br>
+      <li>Taller 4
+        <ul>
+          <li><a href="../taller4/salarios.html">Salarios</a></li>
+        </ul>
+      </li>
+  </aside>
   <section id="main-isosceles" class="seccion">
     <h2>Cálcula el área y perímetro de un Triángulo Isósceles.</h2>
     <form action="">
-      <label for="inputLado"> Escribe el valor de lado.</label>
+      <label for="inputLado">Valor de lado</label>
       <input id="inputLado" name="inputLado" type="number" required="" placeholder="Ingrese número positivo" /><br>
-      <label for="inputBase"> Escribe el valor de la base.</label>
-      <input id="inputBase" name="inputBase" type="number" required="" placeholder="Ingrese número positivo" /><br><br>
+      <label for="inputBase">Valor de la base</label>
+      <input id="inputBase" name="inputBase" type="number" required="" placeholder="Ingrese número positivo" /><br>
       <button type="button" onclick="calcularPerimetro()">
         Cálcula el perímetro.
       </button>

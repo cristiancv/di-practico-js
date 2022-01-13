@@ -16,6 +16,7 @@ body {
 .encabezado {
   text-align: center;
 }
+/* Inicio de sec-indice */
 .sec-indice{
   display: inline-block;
   margin:20px auto;
@@ -26,7 +27,7 @@ body {
   font-size: 2.4rem;
   border-radius: 10px;
   font-weight: bold;
-}
+} 
 .sec-indice a{
   text-decoration: none;
   cursor:pointer;
@@ -41,7 +42,7 @@ body {
   color:blue;
   background-color: floralwhite;
 }
-
+/* Fin de sec-indice*/
 h1,
 h2 {
   color: yellow;
@@ -108,11 +109,12 @@ form label, form input{
   color: rgb(10, 66, 27);
   margin: 20px auto;
 }
-button {
+form button {
   cursor:pointer;
   margin: 10px auto;
   padding: 10px;
   border-radius: 10px;
   color: white;
   background-color: rgb(10, 66, 27);
+  display:block;
 }
