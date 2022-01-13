@@ -88,6 +88,8 @@ h2 {
 /*Final para estilos del aside temario */
 
 .seccion {
+  position: relative;
+  left: 30px;
   padding: 10px;
   margin: 20px auto;
   max-width: 600px;
@@ -97,11 +99,6 @@ h2 {
   background-color: orange;
   text-align: center;
 }
-.contenedor {
-  color: rgb(10, 66, 27);
-  text-align: center;
-  margin: 20px auto;
-}
 form{
   margin: 10px;
   padding: 15px;
@@ -109,6 +106,10 @@ form{
 form label, form input{
   margin: 5px 0px 5px 5px;
   padding: 5px;
+}
+.contenedor {
+  color: rgb(10, 66, 27);
+  margin: 20px auto;
 }
 form button {
   margin: 10px auto;
