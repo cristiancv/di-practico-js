@@ -10,17 +10,50 @@
 </head>
 
 <body>
-  <header class="encabezado"> 
+  <header class="encabezado">
+    <section class="sec-indice">
+      <a href="../index.html">Índice</a><br>
+    </section> 
   <h1>Porcentajes y Descuentos.</h1><br>
   <p>Este es el taller 2 práctico de JavaScript. </p>
   </header><br>
+  <aside class="temario">
+    <h3>Contenidos</h3>
+    <ul>
+      <li><a href="../index.html">Índice</a></li>
+      <li><a href="../prueba-previaJS.html">Prueba previa</a></li><br>
+      <li>Taller 1
+        <ul>
+          <li><a href="../taller1/figuras.html">Figuras geométricas</a></li>
+          <li><a href="../taller1/isosceles.html">Triángulo isósceles</a></li>
+        </ul>
+      </li><br>
+      <li>Taller 2
+        <ul>
+          <li><a href="../taller2/descuentos.html">Descuentos</a></li>
+          <li><a href="../taller2/descuentos-con-cupon.html">Descuentos con cupón</a></li>
+        </ul>
+      </li><br>
+      <li>Taller 3
+        <ul>
+          <li><a href="../taller3/promedio.html">Promedio</a></li>
+          <li><a href="../taller3/mediana.html">Mediana</a></li>
+          <li><a href="../taller3/moda.html">Moda</a></li>
+        </ul>
+      </li><br>
+      <li>Taller 4
+        <ul>
+          <li><a href="../taller4/salarios.html">Salarios</a></li>
+        </ul>
+      </li>
+  </aside>
   <section id="main-descuentos" class="seccion">
     <form action="">
       <label for="input-precio">
-        Ingrese el precio del producto.
+        Precio del producto.
       </label>
       <input type="number" id="input-precio" required="" placeholder="Ingrese Precio" /><br>
-      <label for="input-descuento">Ingrese el valor de descuento.</label>
+      <label for="input-descuento">Valor de descuento.</label>
       <input type="number" id="input-descuento" required="" placeholder="Descuento" /><br><br>
       <button type="button" onclick="obtenerPrecioFinal()"> Calcular precio a pagar.</button><br>
       <div class="contenedor" id="descuento-respuesta">

@@ -108,6 +108,7 @@ form label, form input{
 .contenedor {
   color: rgb(10, 66, 27);
   margin: 20px auto;
+  text-align: center;
 }
 form button {
   cursor:pointer;
