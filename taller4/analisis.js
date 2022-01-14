@@ -54,6 +54,7 @@ const agregarDato = (nombre, numero = 0 || numero) => {
   if (typeof numero !== "number")
     return alert(`El dato ingresado: ${numero} debe ser un número`);
   if (typeof numero === undefined) return alert("No ha definido el salario");
+  if (numero===0) return alert("El salario debe ser mayor a 0");
   listanumeros.push(numero);
   agregarFila(nombre, numero);
   return listanumeros;
@@ -72,12 +73,15 @@ const agregarFila = (nombre = "", numero = 0) => {
 };
 function agregarFilaBtn() {
   let numleido = parseFloat(campoNumero.value);
+  if (campoNombre.value===""){
+    return alert(`El Nombre debe ser un texto: ${campoNombre.textContent}`)
+  }
   if (isNaN(numleido)) {
-    campoNumero.value = "";
-    return alert("El campo debe ser un número: ${numleido}.");
+    campoNumero.value = 0;
+    return alert(`El campo debe ser un número: ${numleido}`);
   } else {
     agregarDato(campoNombre.value, numleido);
-    campoNumero.value = "";
+    campoNumero.value = "0";
     campoNombre.value = "";
   }
 }

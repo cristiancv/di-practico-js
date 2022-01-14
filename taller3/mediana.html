@@ -11,14 +11,47 @@
 
 <body>
   <header class="encabezado" id="cabecera">
+    <section class="sec-indice">
+      <a href="../index.html">Índice</a><br>
+    </section> 
     <h1>Mediana.</h1>
-    <hr><br>
+    <br>
     <h3>En este ejercicio debe agregar varios números para calcular el valor de la Mediana.</h3>
   </header>
+  <aside class="temario">
+    <h3>Contenidos</h3>
+    <ul>
+      <li><a href="../index.html">Índice</a></li>
+      <li><a href="../prueba-previaJS.html">Prueba previa</a></li><br>
+      <li>Taller 1
+        <ul>
+          <li><a href="../taller1/figuras.html">Figuras geométricas</a></li>
+          <li><a href="../taller1/isosceles.html">Triángulo isósceles</a></li>
+        </ul>
+      </li><br>
+      <li>Taller 2
+        <ul>
+          <li><a href="../taller2/descuentos.html">Descuentos</a></li>
+          <li><a href="../taller2/descuentos-con-cupon.html">Descuentos con cupón</a></li>
+        </ul>
+      </li><br>
+      <li>Taller 3
+        <ul>
+          <li><a href="../taller3/promedio.html">Promedio</a></li>
+          <li><a href="../taller3/mediana.html">Mediana</a></li>
+          <li><a href="../taller3/moda.html">Moda</a></li>
+        </ul>
+      </li><br>
+      <li>Taller 4
+        <ul>
+          <li><a href="../taller4/salarios.html">Salarios</a></li>
+        </ul>
+      </li>
+  </aside>
   <section id="seccion-mediana" class="seccion">
     <form action="">
       <label for="numero">Ingrese número a agregar:</label>
-      <input type="number" name="numero" id="numero" required />
+      <input type="number" name="numero" id="numero" required /><br><br>
       <button type="button" onclick="agregarNumeroBtn()">Agregar</button>
       <button type="button" onclick="medianaBoton()">Calcular Mediana.</button>
     </form>
@@ -34,8 +67,7 @@
       <tbody id="tabla-body">
         <!-- aqui debe ir un tr y un td-->
       </tbody>
-    </table><br>
-
+    </table>
   </section>
 
   <script src="./mediana.js"></script>

@@ -18,10 +18,68 @@ body {
   padding: 20px;
   text-align: center;
 }
+/* Inicio de sec-indice */
+.sec-indice{
+  display: inline-block;
+  margin:20px auto;
+  padding:0px 10px;
+  color:yellow;
+  background-color: orange;
+  border: 2px solid floralwhite;
+  font-size: 2.4rem;
+  border-radius: 10px;
+  font-weight: bold;
+} 
+.sec-indice a{
+  text-decoration: none;
+  cursor:pointer;
+}
+.sec-indice a:link{
+  color:yellow;
+}
+.sec-indice a:visited{
+  color:yellow;
+}
+.sec-indice a:hover{
+  color:blue;
+  background-color: floralwhite;
+}
+/* Fin de sec-indice*/
 h1 {
   color: yellow;
   font-size: 3rem;
 }
+/* Inicio para estilos del aside temario*/
+.temario{
+  background-color: yellow;
+  position: fixed;
+  left:20px;
+  top:80px;
+  border: solid 3px green;
+  width:15vw;
+}
+.temario h3, .temario li{
+  color:forestgreen;
+}
+.temario ul li{
+  list-style: none;
+  font-size: 2rem;
+}
+.temario ul li a{
+  text-decoration:tomato;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.temario ul li ul li:hover, ul li:hover{
+  background-color: white;
+  font-size: 2.4rem;
+}
+.temario ul li ul li a:hover, ul li a:hover{
+  color:blue;
+  font-size:1.8rem;
+}
+/*Final para estilos del aside temario */
 .seccion {
   padding: 20px;
   margin: 20px auto;
@@ -32,35 +90,34 @@ h1 {
   background-color: orange;
   text-align: center;
 }
+form{
+  margin: 10px;
+  padding: 15px;
+}
+form label, form input{
+  margin: 5px 0px 5px 5px;
+  padding: 5px;
+}
 .contenedor {
   color: bisque;
   text-align: center;
   font-size: 2rem;
-}
-form {
-  margin: 10px;
-  padding: 10px;
-}
-form input {
-  padding: 5px;
-  margin: 5px;
-}
-form label {
-  padding: 20px;
-  margin: 20px;
+  color: rgb(10, 66, 27);
+  margin: 10px auto;
 }
 form button {
-  margin: 10px auto;
+  margin: 5px;
   padding: 10px;
   border-radius: 10px;
   color: white;
-  text-align: center;
+  
   background-color: rgb(10, 66, 27);
 }
 #tabla-numeros {
   font-family: monospace;
   color: black;
   background-color: bisque;
+  margin:10px auto;
 }
 thead,
 th {
