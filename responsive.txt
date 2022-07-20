@@ -1,0 +1,1 @@
+Creada rama responsive, para ajustar el contenido a varios tamaños de pantalla.
