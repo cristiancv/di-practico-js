@@ -19,15 +19,23 @@ function esPar(numero) {
   }
 }
 function calcularMediana(lista = []) {
+  let mediana = 0;
+  //Agregadas las siguientes líneas para validar Arreglo vacío o con 0 elementos
+  if(lista===undefined) return alert(`La lista no fue definida: ${lista}`);
+  if (lista===null) return alert("La lista se encuentra vacia.")
+  if (lista.length===0){
+    //alert(`La lista: ${lista} tiene 0 elementos`);
+    //return mediana;
+    return (`La lista ${lista} tiene 0 elementos`);
+  }
+  //Fin validaciones
   let listaOrdenada1 = lista.sort(function (a, b) {
     return a - b;
   });
   let mitadLista = parseInt(listaOrdenada1.length / 2);
-  let mediana = 0;
   if (esPar(listaOrdenada1.length)) {
     const elemento1 = listaOrdenada1[mitadLista - 1];
     const elemento2 = listaOrdenada1[mitadLista];
-
     const promedioElemento1y2 = calcularMediaAritmetica([elemento1, elemento2]);
     mediana = promedioElemento1y2;
     //return `La mediana es: ${mediana}`;
@@ -64,5 +72,7 @@ function agregarNumeroBtn() {
 function medianaBoton() {
   let mediana = calcularMediana(listanumeros);
   let resultado = document.getElementById("resultado");
-  resultado.textContent = `La Mediana es: ${mediana}`;
+  //resultado.textContent = `La Mediana es: ${mediana}`;
+  if ( typeof mediana === "string") resultado.textContent = `${mediana}`;
+  if ( typeof mediana === "number") resultado.textContent = `La Mediana es: ${mediana}`;
 }

@@ -4,20 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prueba Previa antes del práctico de JS de platzi</title>
+  <title>Prueba Previa antes del práctico de JS</title>
   <link rel="stylesheet" href="./css/prueba0.css">
 </head>
 
 <body>
+<header id="cabecera">
   <section class="sec-indice">
     <a href="./index.html">Ir al índice</a>
   </section> <br><br>
   <h1>Prueba Previa y desarrollo</h1> <br>
+</header>
+<main id="principal" class="contenido">
   <h2 class="titulo2" id="variables_y_operaciones">Variables y operaciones</h2>
   <hr>
   </br>
   <ol class="variables operaciones">
-    <li>Responde las siguientes preguntas en la sección de comentarios: </li></br>
+    <li>Responde las siguientes preguntas: </li></br>
     <ul>
       <li>¿Qué es una variable y para qué sirve?
         <span>Es un lugar o espacio en memoria el que me permitirá almacenar un dato o valor, este sirve para utilizarlo
@@ -124,13 +127,13 @@
   <ol class="variables operaciones">
     <li>Responde las siguientes preguntas en la sección de comentarios:</li><br>
     <ul>
-      <li>¿Qué es una función?</li><br>
+      <li>¿Qué es una función?</li>
       <p>Una función es un bloque de sentencias de código cuya finalidad es realizar una tarea que puede o no ser
         repetitiva, por lo general estás devuelven un valor. </p><br>
-      <li>¿Cuándo me sirve usar una función en mi código?</li><br>
+      <li>¿Cuándo me sirve usar una función en mi código?</li>
       <p>Una función es útil cuando debo realizar un proceso u operación previamente definida en un bloque de código,
         entonces mediante las llamadas a esta función puedo reutilizarla las veces que sean necesarias.</p><br>
-      <li>¿Cuál es la diferencia entre parámetros y argumentos de una función?</li> <br>
+      <li>¿Cuál es la diferencia entre parámetros y argumentos de una función?</li>
       <p>Parámetros son las variables definidas dentro del ámbito de recepción de una función; en cambio argumentos son
         los valores
         que dichos parámetros van a tomar al momento de hacer la llamada a dicha función.</p><br>
@@ -154,16 +157,16 @@
       }
       funciones2();
     </script>
-  </ol><br><br>
+  </ol><br>
   <h2 class="titulo2">Condicionales</h2>
   <hr><br><br>
   <ol class="variables operaciones">
     <li>Responde las siguientes preguntas en la sección de comentarios:</li><br>
     <ul>
-      <li>¿Qué es una condicional?</li><br>
+      <li>¿Qué es una condicional?</li>
       <p>Es una sentencia de código que al evaluarse como verdadera permite la ejecución de cierto bloque de código,
         este bloque de código se encuentra delimitado por el ámbito especificado por la condicional. </p><br>
-      <li>¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?.</li> <br>
+      <li>¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?.</li>
       <p><span>Unario:</span> como el de negación, este cambia el valor de verdad de una variable o una expresión.</p>
       <br>
       <p><span>Relacional u operacional:</span> Compara el valor de dos variables o expresiones determinando como
@@ -181,14 +184,13 @@
         booleano,
         entonces cuando la respuesta es verdadera, se ejecutara la línea de código indicada o si es falsa la línea
         correspondiente.</p><br>
-      <li>¿Puedo combinar funciones y condicionales?</li><br>
+      <li>¿Puedo combinar funciones y condicionales?</li>
       <p>Si, si es posible.</p><br>
     </ul>
-    <li>Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:</li>
-    <br>
+    <li>Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:</li><br>
     <p class="pcodigo"> Código:</p><br>
     <pre>
-<code>
+<code class="codigo">
   const tipoDeSuscripcion = "Basic";
   
   switch (tipoDeSuscripcion) {
@@ -258,10 +260,10 @@
     </script>
     <li>Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni
       else
-      if).</li><br><br>
+      if).</li><br>
     <p class="pcodigo"> Código:</p><br>
     <pre>
-<code>
+<code class="codigo">
 const tipoDeSuscripcion = "Basic";
 
   if (tipoDeSuscripcion === "Free") {
@@ -302,21 +304,21 @@ const tipoDeSuscripcion = "Basic";
   <ol class="variables operaciones">
     <li>Responde las siguientes preguntas en la sección de comentarios:</li><br>
     <ul>
-      <li>¿Qué es un ciclo?</li><br>
+      <li>¿Qué es un ciclo?</li>
       <p>Es un bloque de sentencias de código que se repetiran n veces siempre y cuando la condición dada se cumpla
         como verdadera.</p><br>
-      <li>¿Qué tipos de ciclos existen en JavaScript?</li><br>
+      <li>¿Qué tipos de ciclos existen en JavaScript?</li>
       <p>Existen: for, while, do while, para colecciones el for of y for in</p><br>
-      <li>¿Qué es un ciclo infinito y por qué es un problema?</li><br>
+      <li>¿Qué es un ciclo infinito y por qué es un problema?</li>
       <p>Es un ciclo cuyo código de ejecuta indefinidamente, es un problema ya que llega a consumir toda la memoria
         principal del computador, obligando así a detener su ejecución de manera forzada.</p><br>
-      <li>¿Puedo mezclar ciclos y condicionales?</li><br>
+      <li>¿Puedo mezclar ciclos y condicionales?</li>
       <p>Si es posible según se requiera.</p><br>
     </ul>
     <li>Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:</li><br>
     <p class="pcodigo"> Código:</p><br>
     <pre>
-<code>
+<code class="codigo">
   for (let i = 0; i < 5; i++) { console.log("El valor de i es: " + i);
   }
 </code>
@@ -354,7 +356,7 @@ while(i > 2 ){
     <li>Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un
       mensaje de felicitaciones, pero si responden mal, volvemos a empezar.</li><br>
     <p>Pista: puedes usar la función prompt de JavaScript.</p><br>
-    <p class="codigo">Código:</p>
+    <p class="codigo">Código:</p><br>
     <pre>
   <code>
   let suma = 0;
@@ -372,19 +374,19 @@ while(i > 2 ){
   <hr><br>
   <ol class="variables operaciones">
     <li>
-      Responde las siguientes preguntas en la sección de comentarios:
+      Responde las siguientes preguntas:
     </li><br>
     <ul>
-      <li>¿Qué es un array?</li><br>
+      <li>¿Qué es un array?</li>
       <p>Un Arreglo o array es una colección de elementos que pueden ser o no datos del mismo tipo, dependiendo del
         lenguaje de programación.</p><br>
-      <li>¿Qué es un objeto?</li><br>
+      <li>¿Qué es un objeto?</li>
       <p>Es la representación de una entidad la cuál posee una cantidad de atributos o propiedades y metodos o
         funciones propias.</p><br>
-      <li>¿Cuándo es mejor usar objetos o arrays?</li><br>
+      <li>¿Cuándo es mejor usar objetos o arrays?</li>
       <p>Es mejor usar objetos cuando se maneja un conjunto de propiedades, y el array cuando se requiere utilizar una
         colección de elementos.</p><br>
-      <li>¿Puedo mezclar arrays con objetos o incluso objetos con arrays?</li><br>
+      <li>¿Puedo mezclar arrays con objetos o incluso objetos con arrays?</li>
       <p>Si ya que tanto uno puede contener al otro y viceversa.</p><br>
     </ul>
     <li>Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.</li><br>
@@ -392,13 +394,13 @@ while(i > 2 ){
       const imprimirPrimerElemento = arreglo => console.log(arreglo[0]);
       imprimirPrimerElemento(["elemento 1", 2, true, 4, 5]);
     </script>
-    <p class="codigo">Código:</p><br>
+    <p class="pcodigo">Código:</p><br>
     <pre>
 <code>
   const imprimirPrimerElemento = arreglo => console.log(arreglo[0]);
   imprimirPrimerElemento(["elemento 1", 2, true, 4, 5]);
 </code>
-</pre><br><br>
+</pre><br>
     <li>
       Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se
       vale
@@ -412,7 +414,7 @@ while(i > 2 ){
       }
       imprimirArregloElementos(arreglo1);
     </script>
-    <p class="codigo">Código:</p><br>
+    <p class="pcodigo">Código:</p><br>
     <pre>
 <code>
   const imprimirArregloElementos = arreglo1 => {
@@ -422,7 +424,7 @@ while(i > 2 ){
   }
   imprimirArregloElementos(["elemento 1", 2, true, 4, 5]);
 </code>
-</pre><br><br>
+</pre><br>
     <li>
       Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no
       se vale
@@ -431,14 +433,13 @@ while(i > 2 ){
 
       const imprimirPrimerElemento = arreglo => console.log(arreglo[0]);
       imprimirPrimerElemento(["elemento 1", 2, true, 4, 5]);
-    </script>
-  </ol>
+    </script>  
   <script>
       let auto1 = { color: "red", marca: "mazda", año: 2005 };
       const imprimirAtributos = obj => console.log("Auto: " + Object.keys(obj));
       imprimirAtributos(auto1);
     </script>
-    <p class="codigo">Código:</p><br>
+    <p class="pcodigo">Código:</p><br>
     <pre>
 <code>
   let auto1 = { color: "red", marca: "mazda", año: 2005 };
@@ -446,8 +447,12 @@ while(i > 2 ){
   imprimirAtributos(auto1);
 </code>
 </pre><br>
-  </ol><br><br>
-  <footer>Gracias por su atención. Prueba finalizada.</footer>
+  </ol><br>
+</main>
+  <footer id="pie" class="pie">
+    <a href="#cabecera">Ir a Inicio</a> </br><br>
+    <p>Gracias por su atención. Prueba terminada. </p>
+  </footer>
 </body>
 
 </html>

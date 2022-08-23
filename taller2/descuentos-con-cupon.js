@@ -25,12 +25,9 @@ function totalAPagar() {
   texto_cupon=texto_cupon[selectCupon.selectedIndex].text;
   if (isNaN(precio)) {
     inputPrecio.value = "";
-    selectCupon.value = "";
     return alert("El precio debe ser un número.");
   }
   let preciofinal = calcularPrecioFinal(precio, valor_cupon);
   let presultado = document.getElementById("resultado");
-  presultado.textContent = `El precio total con ${texto_cupon}, es de: $${preciofinal.toFixed(
-    2
-  )}`;
+  presultado.textContent = `El precio total con ${texto_cupon}, es de: $${preciofinal.toFixed(2)}`;
 }

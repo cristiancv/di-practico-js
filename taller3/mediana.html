@@ -3,21 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mediana| Curso práctico de Javascript</title>
   <link rel="stylesheet" href="..//css/mediana.css">
-  <title>Mediana| Curso práctico de Javascript de Platzi</title>
 </head>
-
 <body>
-  <header class="encabezado" id="cabecera">
+<header id="cabecera" class="encabezado">
     <section class="sec-indice">
       <a href="../index.html">Índice</a><br>
     </section> 
     <h1>Mediana.</h1>
-    <br>
-    <h3>En este ejercicio debe agregar varios números para calcular el valor de la Mediana.</h3>
-  </header>
+</header><br>
+<div id="contenido">
   <aside class="temario">
     <h3>Contenidos</h3>
     <ul>
@@ -48,10 +45,14 @@
         </ul>
       </li>
   </aside>
-  <section id="seccion-mediana" class="seccion">
+  <main id="principal" class="main">
+    <section id="seccion-mediana" class="seccion">
+      <h2>Agrega los elementos a la tabla "Números"</h2>
     <form action="">
-      <label for="numero">Ingrese número a agregar:</label>
-      <input type="number" name="numero" id="numero" required /><br><br>
+      <div class="datos">
+      <label for="numero">Número:</label>
+      <input type="number" name="numero" id="numero" required />
+      </div>
       <button type="button" onclick="agregarNumeroBtn()">Agregar</button>
       <button type="button" onclick="medianaBoton()">Calcular Mediana.</button>
     </form>
@@ -68,9 +69,13 @@
         <!-- aqui debe ir un tr y un td-->
       </tbody>
     </table>
-  </section>
-
-  <script src="./mediana.js"></script>
+    </section>
+  </main>
+</div>
+<footer id="pie" class="pie">
+  <a href="#cabecera">Ir a Inicio</a></br><br>
+  <p>Gracias por su atención.</p>
+</footer>
+  <script type="text/javascript" src="./mediana.js"></script>
 </body>
-
 </html>

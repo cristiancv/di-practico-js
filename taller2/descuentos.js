@@ -21,15 +21,15 @@ function obtenerPrecioFinal() {
   let precio = parseFloat(inputPrecio.value);
   let inputDescuento = document.getElementById("input-descuento");
   let descuento = parseFloat(inputDescuento.value);
-  if (isNaN(precio) || isNaN(descuento)) {
+  if (isNaN(precio)) {
     inputPrecio.value = "";
-    inputDescuento.value = "";
-    return alert("El precio y descuento deben ser números");
+    return alert("El precio debe ser un número");
   }
-  let preciofinal = calcularPrecioFinal(precio, descuento);
-  document.getElementById(
-    "resultado"
-  ).textContent = `El precio del producto a pagar $${precio} con descuento: ${descuento}% es de: $${preciofinal.toFixed(
-    2
-  )}`;
+  if(isNaN(descuento)){
+    inputDescuento.value = "";
+    return alert("El descuento debe ser un número");
+  }else{
+    let preciofinal = calcularPrecioFinal(precio, descuento);
+    document.getElementById("resultado").textContent = `El precio del producto a pagar $${precio} con descuento: ${descuento}% es de: $${preciofinal.toFixed(2)}`;
+  }  
 }

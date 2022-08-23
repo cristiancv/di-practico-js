@@ -7,17 +7,16 @@
   <title>Triángulo Isosceles, Perímetro y Área</title>
   <link rel="stylesheet" href="..//css/isosceles.css">
 </head>
-
 <body>
-
-  <header class="encabezado">
-    <section class="sec-indice">
-      <a href="../index.html">Índice</a><br>
-    </section> 
-    <h1>Triángulo Isósceles, Ejercicio</h1><br>
-    <p>Este es el ejercicio se cálcula previamente la altura del triángulo, para luego
-      obtener su perímetro y área.</p>
-  </header>
+<header id="encabezado" class="encabezado">
+  <section class="sec-indice">
+    <a href="../index.html">Índice</a><br>
+  </section><br>
+  <h1>Triángulo Isósceles</h1>
+  <p>Ingrese el valor de lado y de base para obtener su perímetro o área.
+  </p>
+</header>
+<div id="contenido">
   <aside class="temario">
     <h3>Contenidos</h3>
     <ul>
@@ -48,24 +47,32 @@
         </ul>
       </li>
   </aside>
+  <main id="principal" class="main">
   <section id="main-isosceles" class="seccion">
     <h2>Cálcula el área y perímetro de un Triángulo Isósceles.</h2>
     <form action="">
-      <label for="inputLado">Valor de lado</label>
-      <input id="inputLado" name="inputLado" type="number" required="" placeholder="Ingrese número positivo" /><br>
-      <label for="inputBase">Valor de la base</label>
-      <input id="inputBase" name="inputBase" type="number" required="" placeholder="Ingrese número positivo" /><br><br>
+    <div class="datos">
+      <label for="inputLado">Lado:</label>
+      <input id="inputLado" name="inputLado" type="number" required placeholder="Ingrese número positivo" />
+      <label for="inputBase">Base:</label>
+      <input id="inputBase" name="inputBase" type="number" required placeholder="Ingrese número positivo" />
+    </div>
       <button type="button" onclick="calcularPerimetro()">
-        Cálcula el perímetro.
+        Calcular perímetro.
       </button><br>
-      <button type="button" onclick="calcularArea()">Cálcula el área.</button><br>
-
+      <button type="button" onclick="calcularArea()">Calcular área.</button><br>
       <div class="contenedor" id="triangulo-respuesta">
-        <p id="respuesta-triangulo"> La respuesta Aquí</p>
+        <p id="respuesta-triangulo"> Respuesta:</p>
       </div>
     </form>
   </section>
-  <script type="text/javascript" src="./isosceles.js"></script>
+  </main>
+</div>
+<footer id="pie" class="pie">
+  <a href="#encabezado">Ir a Inicio</a></br><br>
+  <p>Gracias por su atención.</p>
+</footer>
+<script type="text/javascript" src="./isosceles.js"></script>
 </body>
 
 </html>

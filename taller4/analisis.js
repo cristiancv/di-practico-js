@@ -15,13 +15,28 @@ function esPar(numero) {
   return numero % 2 === 0;
 }
 function calcularMediaAritmetica(lista) {
-  const sumaLista = lista.reduce(function (valorAcumulado = 0, nuevoElemento) {
-    return valorAcumulado + nuevoElemento;
-  });
-  const promedioLista = sumaLista / lista.length;
-  return promedioLista;
+  if(lista===undefined) return 0;
+  if(lista.length===0){
+     alert(`La lista tiene 0 elementos`);
+     return 0;
+  }
+  if (lista===null) return 0;
+  if (lista.length>=1){
+    const sumaLista = lista.reduce(function (valorAcumulado = 0, nuevoElemento) {
+      return valorAcumulado + nuevoElemento;
+    });
+    const promedioLista = sumaLista / lista.length;
+    console.info(`Promedio Lista: ${promedioLista}`);
+    return promedioLista;
+  }
+  else{
+    return "Lista está vacia o no tiene elementos";
+  }
 }
 function medianaSalarios(lista) {
+  if(lista===undefined) return alert(`La lista no ha sido definida`);
+  if (lista===null) return alert("La lista se encuentra vacia.");
+  if (lista.length===0) return (`La lista tiene 0 elementos`);
   let listaOrd = lista.sort(function (a, b) {
     return a - b;
   });
@@ -52,7 +67,7 @@ const agregarDato = (nombre, numero = 0 || numero) => {
   if (typeof nombre !== "string") return alert(`El nombre debe ser un texto`);
   if (typeof nombre === undefined) return alert("No ha definido el nombre");
   if (typeof numero !== "number")
-    return alert(`El dato ingresado: ${numero} debe ser un número`);
+    return alert(`El salario ingresado: ${numero} debe ser un número`);
   if (typeof numero === undefined) return alert("No ha definido el salario");
   if (numero===0) return alert("El salario debe ser mayor a 0");
   listanumeros.push(numero);
@@ -78,7 +93,7 @@ function agregarFilaBtn() {
   }
   if (isNaN(numleido)) {
     campoNumero.value = 0;
-    return alert(`El campo debe ser un número: ${numleido}`);
+    return alert(`Salario debe ser un número: ${numleido}`);
   } else {
     agregarDato(campoNombre.value, numleido);
     campoNumero.value = "0";
@@ -88,5 +103,6 @@ function agregarFilaBtn() {
 function medianaBoton() {
   let mediana = medianaSalarios(listanumeros);
   let resultado = document.getElementById("resultado");
-  resultado.textContent = `La Mediana de salarios es: ${mediana}`;
+  if ( typeof mediana === "string") resultado.textContent = `${mediana}`;
+  if ( typeof mediana === "number") resultado.textContent = `La Mediana es: ${mediana}`;
 }
