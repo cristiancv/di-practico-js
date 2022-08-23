@@ -4,7 +4,12 @@ const tablabody = document.getElementById("tabla-body");
 const camponumero = document.getElementById("numero");
 
 const listanumeros = new Array();
+
 const calcularModa = (lista = []) => {
+  if(lista===undefined) return alert(`La lista para moda no fue definida: ${lista}`);
+  if(lista.length===0){  alert(`La lista tiene 0 elementos: ${lista}`);
+    return moda=0;
+  }
   let listaCount = {};
   lista.map(function (elemento) {
     if (listaCount[elemento]) {
@@ -23,6 +28,7 @@ const calcularModa = (lista = []) => {
   //return `La moda es: ${moda}`;
   return moda;
 };
+
 const agregarNumero = (numero = 0 || numero) => {
   if (typeof numero !== "number")
     return alert(`El dato ingresado: ${numero} debe ser un número`);
@@ -31,6 +37,7 @@ const agregarNumero = (numero = 0 || numero) => {
   agregarCelda(numero);
   return listanumeros;
 };
+
 const agregarCelda = (numero = 0 || numero) => {
   let fila = document.createElement("tr");
   let dato = document.createElement("td");

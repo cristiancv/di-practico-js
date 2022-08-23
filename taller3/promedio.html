@@ -4,19 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Promedio | Curso Práctico de Javascript de Platzi</title>
+  <title>Promedio | Curso Práctico de Javascript.</title>
   <link rel="stylesheet" href="../css/promedio.css">
 </head>
 
 <body>
-  <header class="encabezado" id="cabecera">
+  <header id="cabecera" class="encabezado">
     <section class="sec-indice">
       <a href="../index.html">Índice</a><br>
     </section> 
     <h1>Promedio</h1>
-    <br>
-    <h3>En este ejercicio debe agregar varios números para calcular su promedio (media aritmética).</h3>
+    <h3>Debe agregar varios números para calcular su promedio.</h3>
   </header>
+<div id="contenido">
   <aside class="temario">
     <h3>Contenidos</h3>
     <ul>
@@ -47,28 +47,38 @@
         </ul>
       </li>
   </aside>
-  <section id="seccion-promedio" class="seccion">
-    <form action="">
-      <label for="numero">Ingrese número a agregar:</label>
-      <input type="number" name="numero" id="numero" required /><br><br>
-      <button type="button" onclick="agregarNumeroBtn()">Agregar</button>
-      <button type="button" onclick="promedioBoton()">Calcular Promedio.</button>
-    </form>
-    <div class="contenedor">
-      <p id="resultado">Promedio es:</p>
-    </div><br>
-    <table class="tabla" border=1 id="tabla-numeros">
-      <thead>
-        <tr>
-          <th>Números:</th>
-        </tr>
-      </thead>
-      <tbody id="tabla-body">
-        <!-- aqui debe ir un tr y un td-->
-      </tbody>
-    </table>
-  </section>
-  <script src="./promedio.js"></script>
+  <main id="principal" class="main">
+    <section id="seccion-promedio" class="seccion">
+      <h2>Agrega los elementos a la tabla "Números"</h2>
+      <form action="">
+        <div class="datos">
+          <label for="numero">Número:</label>
+          <input type="number" name="numero" id="numero" required />
+        </div>
+        <button type="button" onclick="agregarNumeroBtn()">Agregar</button>
+        <button type="button" onclick="promedioBoton()">Calcular Promedio.</button>
+      </form>
+      <div class="contenedor">
+        <p id="resultado">Promedio es:</p>
+      </div><br>
+      <table class="tabla" border=1 id="tabla-numeros">
+        <thead>
+          <tr>
+            <th>Números:</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-body">
+          <!-- aqui debe ir un tr y un td-->
+        </tbody>
+      </table>
+    </section>
+  </main>
+</div>
+<footer id="pie" class="pie">
+  <a href="#cabecera">Ir a Inicio</a></br><br>
+  <p>Gracias por su atención.</p>
+</footer>
+  <script type="text/javascript" src="./promedio.js"></script>
 </body>
 
 </html>

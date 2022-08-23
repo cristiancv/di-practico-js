@@ -5,10 +5,22 @@ const camponumero = document.getElementById("numero");
 const listanumeros = new Array();
 
 function calcularMediaAritmetica(lista) {
-  const sumaLista = lista.reduce(function (valorAcumulado = 0, nuevoElemento) {
-    return valorAcumulado + nuevoElemento;
-  });
-  const promedioLista = sumaLista / lista.length;
+  //Agregadas
+  let promedioLista=0;
+  if(lista===undefined) return alert(`La lista no fue definida: ${lista}`);
+  if(lista===null) return alert(`La lista se encuentra vacia: ${lista}`);
+  if(lista.length===0){
+    alert(`La lista tiene 0 elementos: ${lista}`);
+    return promedioLista;
+  };
+  //Fin
+  //if(lista.length >= 1){
+    const sumaLista = lista.reduce(
+      function (valorAcumulado = 0, nuevoElemento) { 
+      return valorAcumulado + nuevoElemento;
+    });
+    promedioLista = sumaLista / lista.length;    
+  //}
   return promedioLista;
 }
 

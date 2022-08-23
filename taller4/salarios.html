@@ -4,19 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/salarios.css">
   <title>Salarios |Curso JS práctico</title>
+  <link rel="stylesheet" href="../css/salarios.css">
 </head>
 
 <body>
-  <header class="encabezado" id="cabecera">
-    <section class="sec-indice">
-      <a href="../index.html">Índice</a><br>
-    </section> 
-    <h1>Salarios y su mediana.</h1>
-    <br>
-    <h3>En este ejercicio debe agregar varios registros "nombre y salario" para calcular la Mediana.</h3>
-  </header>
+<header id="cabecera" class="encabezado">
+  <section class="sec-indice">
+    <a href="../index.html">Índice</a><br>
+  </section> 
+  <h1>Salarios y su mediana.</h1>
+  <h3>Debe agregar varios registros "nombre y salario" para calcular la Mediana.</h3>
+</header>
+<div id="contenido">
   <aside class="temario">
     <h3>Contenidos</h3>
     <ul>
@@ -47,12 +47,15 @@
         </ul>
       </li>
   </aside>
+<main id="principal" class="main">
   <section id="seccion-salarios" class="seccion">
     <form action="">
-      <label for="nombre">Ingrese nombre:</label>
-      <input type="text" name="nombre" id="nombre" required autocomplete="name" placeholder="Nombre"/><br>
-      <label for="salario">Ingrese salario:</label>
-      <input type="number" name="salario" id="salario" value=0 required autocomplete="" /><br><br>
+      <div class="datos">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" required autocomplete="name" placeholder="Nombre"/>
+      <label for="salario">Salario:</label>
+      <input type="number" name="salario" id="salario" value=0 required autocomplete=""/>
+      </div>
       <button type="button" onclick="agregarFilaBtn()">Agregar fila</button>
       <button type="button" onclick="medianaBoton()">Calcular Mediana.</button>
     </form>
@@ -70,10 +73,14 @@
         <!-- aqui debe ir un tr y dos td-->
       </tbody>
     </table><br>
-
   </section>
-  <script src="./salarios.js"></script>
-  <script src="./analisis.js"></script>
+</main>
+</div>
+<footer id="pie" class="pie">
+  <a href="#cabecera">Ir a Inicio</a></br><br>
+  <p>Gracias por su atención.</p>
+</footer>
+  <script type="text/javascript" src="./salarios.js"></script>
+  <script type="text/javascript" src="./analisis.js"></script>
 </body>
-
 </html>

@@ -4,6 +4,12 @@
   margin: 0;
   padding: 0;
 }
+:root{
+  --verde-pizarra:rgb(10,66,27);
+  --azul-oscuro:rgb(3, 3, 85);
+  --opuesto-verde:rgb(66,9,48);
+  --mivariable:rgb(162,33,40);
+}
 html {
   font-size: 62.5%;
 }
@@ -12,51 +18,73 @@ body {
   background-color: rgb(10, 66, 27);
   color: bisque;
   font-family: "fantasy, sans-serif";
-  line-height: 3rem;
+  line-height: 2.4rem;
 }
 .encabezado {
-  padding: 20px;
+  text-align:center;
+    margin: 20px auto;
+    padding: 10px;
+    height: 25%;
+}
+/*Inicio de sec-indice */
+.sec-indice, #pie{
   text-align: center;
+  font-size: 2rem;
 }
-/* Inicio de sec-indice */
-.sec-indice{
-  display: inline-block;
-  margin:20px auto;
-  padding:0px 10px;
-  color:yellow;
-  background-color: orange;
-  border: 2px solid floralwhite;
-  font-size: 2.4rem;
-  border-radius: 10px;
-  font-weight: bold;
-} 
-.sec-indice a{
+.sec-indice a, #pie a {
   text-decoration: none;
-  cursor:pointer;
-}
+  background-color: yellow;
+  color: rgb(10, 66, 27);
+  color:var(--verde-pizarra);
+  margin: 15px auto;
+  padding: 10px;
+  border-radius: 20px;	
+} 
 .sec-indice a:link{
-  color:yellow;
+  color:darkgreen;
+  color:var(--verde-pizarra);
 }
-.sec-indice a:visited{
-  color:yellow;
+.sec-indice a:visited, #pie a:visited{
+  color:coral;
 }
-.sec-indice a:hover{
+.sec-indice a:hover, #pie a:hover{
+  background-color: whitesmoke;
   color:blue;
-  background-color: floralwhite;
+  color:var(--azul-oscuro);
 }
 /* Fin de sec-indice*/
-h1 {
+h1, h2 {
   color: yellow;
   font-size: 3rem;
+  margin-top: 10px;
+  line-height: 3rem;
+  margin: 20px 0px;
 }
+h2{
+  font-size: 2.4rem;
+}
+/*Creado contendor div para agrupar el contenido*/
+#contenido {
+  height: auto;
+  /*margin: 20px 10px;*/
+  margin:0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 94%;
+}
+/*Fin div contenido*/
 /* Inicio para estilos del aside temario*/
-.temario{
+.temario {
+  display: flex;
+  flex-direction: column;
   background-color: yellow;
+  padding: 10px;
+  text-align: left;
+  align-items: flex-start;
+  width: 190px;
   position: fixed;
-  left:20px;
-  top:80px;
-  border: solid 3px green;
-  width:15vw;
 }
 .temario h3, .temario li{
   color:forestgreen;
@@ -66,54 +94,76 @@ h1 {
   font-size: 2rem;
 }
 .temario ul li a{
+  /*color:var(--verde-pizarra);*/
   text-decoration:tomato;
   cursor: pointer;
   font-size: 1.6rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.temario ul li a:link{
+  color:darkblue;
+  /*color:var(--verde-pizarra);*/
+}
+.temario ul li a:visited{
+  color:orange;
 }
 .temario ul li ul li:hover, ul li:hover{
   background-color: white;
   font-size: 2.4rem;
 }
 .temario ul li ul li a:hover, ul li a:hover{
-  color:blue;
+  /*color:blue;*/
+  color:var(--azul-oscuro);
   font-size:1.8rem;
 }
 /*Final para estilos del aside temario */
+#principal.main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
+}
 .seccion {
-  position: relative;
-  left: 30px;
   padding: 10px;
-  margin: 20px auto;
-  max-width: 600px;
-  min-width: 400px;
-  color: darkblue;
-  border: 2px dashed white;
   background-color: orange;
   text-align: center;
+  color: darkblue;
+  color:#0081ff;
+  margin-bottom: 60px;
+  align-items: flex-end;
+  width: 494px;
 }
+
 form{
   margin: 10px;
-  padding: 15px;
+  font-weight: bolder;
 }
 form label, form input{
-  margin: 5px 0px 5px 5px;
   padding: 5px;
 }
-.contenedor {
-  color: bisque;
-  text-align: center;
-  font-size: 2rem;
-  color: rgb(10, 66, 27);
-  margin: 10px auto;
+.datos {
+	display: grid;
+	grid-template-columns: auto auto;
+	margin: 30px auto;
+	width: 80%;
+	grid-column-gap: 0px;
+	grid-row-gap: 25px;
 }
 form button {
-  margin: 5px;
+  margin: 10px auto;
   padding: 10px;
   border-radius: 10px;
   color: white;
-  
+  text-align: center;
   background-color: rgb(10, 66, 27);
+  display: inline-block;
+}
+.contenedor {
+  color: rgb(10, 66, 27);
+  color:var(--verde-pizarra);
+  margin: 20px auto;
+  text-align: center;
 }
 #tabla-numeros {
   font-family: monospace;
@@ -125,4 +175,85 @@ thead,
 th {
   padding: 10px;
   margin: 10px;
+}
+/*Agregadas como modificaciones antes de los ajustes responsivos */
+footer{
+  margin:20px auto;
+  padding:20px 10px;
+}
+footer p{
+  text-align: center;
+  font-size:1.8rem;
+}
+@media (min-width:900px)and (max-width:1100px){
+  #contenido{
+    width:84%;
+    margin: 0 auto;
+  }
+  .temario{
+    position: fixed;
+    width:auto;
+    height:auto;
+  }
+  .seccion{
+    width:494px;
+    height: auto;
+  }
+}
+  @media screen and (min-width:1100px){
+    #contenido{    
+      /*width: 80%;*/
+      width: 905px;
+      margin:0 auto;
+    }
+    .temario{
+      position: fixed;
+      width:auto;
+      height:auto;
+    }
+  }
+@media screen and (min-width:450px) and (max-width:760px){
+  .temario{
+    display:none;
+  }
+  #principal.main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .seccion {
+    width: 90%;
+    height: auto;
+    margin: 40px auto;
+  }
+  .datos{
+    width:100%;
+  }
+  h2{
+    line-height: 3rem;
+  }
+  
+}
+@media screen and (min-width:320px) and (max-width:450px){
+  .temario{
+    display: none;
+  }
+  #principal.main{
+    width: 100%;
+  }
+  .seccion{
+    width: 100%;
+  }
+  .datos{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 0px;
+    margin: 0px auto;
+  }
+  input{
+    margin-bottom: 40px;
+  }
 }

@@ -5,16 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/descuentos2.css">
-  <title>Descuentos con Cupón |Tarea reto, |Curso Práctico de JavaScript.</title>
+  <title>Descuentos con Cupón |Tarea reto.</title>
 </head>
 <body>
 <header class="encabezado">
   <section class="sec-indice">
     <a href="../index.html">Índice</a><br>
   </section> 
-  <h1>Descuentos con cupón.</h1><hr><br>
-  <p>Está es una tarea en la que se aplican descuentos en base a cupones.</p>
+  <h1>Descuentos con cupón.</h1><br>
+  <p>Ingresa el precio y selecciona un cupón.</p>
 </header>
+<div id="contenido">
 <aside class="temario">
   <h3>Contenidos</h3>
   <ul>
@@ -45,26 +46,35 @@
       </ul>
     </li>
 </aside>
-<section id= "main-descuento" class="seccion">
+<main id="principal" class="main">
+  <section id= "main-descuento" class="seccion">
   <form action="">
+    <div class="datos">
     <label for="input-precio">
-      Precio del producto.
+      Precio:
     </label>
-    <input type="number" id="input-precio" required="" placeholder="Precio" /><br><br>
+    <input type="number" id="input-precio" required placeholder="Precio" title="Ingrese un precio"/>
     <label for="input-cupon">
-      Seleccione cupón:
+      Seleccione:
     </label>
     <select name="cupon" id="select-cupon">
-      <option value="cupon_1" alt="Descuento = 10%">Cupón 1</option>
-      <option value="cupon_2" alt="Descuento = 12%">Cupón 2</option>
-      <option value="cupon_3" alt="Descuento = 15%">Cupón 3</option>
-    </select><br><br>
+      <option value="cupon_1" alt="Descuento = 10%" title="10%">Cupón 1</option>
+      <option value="cupon_2" alt="Descuento = 12%" title="12%">Cupón 2</option>
+      <option value="cupon_3" alt="Descuento = 15%" title="15%">Cupón 3</option>
+    </select>
+    </div>
     <button type="button" onclick="totalAPagar()">Calcular total.</button>
     <div class="contenedor" id="descuento-respuesta">
-    <p id="resultado">Total a pagar:</p>
+    <p id="resultado">Total:</p>
     </div>
   </form>
-</section>
+  </section>
+</main>
+</div>
+<footer id="pie" class="pie">
+  <a href="#encabezado">Ir a Inicio</a></br><br>
+  <p>Gracias por su atención.</p>
+</footer>
   <script src="./descuentos-con-cupon.js"></script>
 </body>
 </html>
