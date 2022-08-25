@@ -3,82 +3,82 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moda | Curso práctico de Javascript</title>
   <link rel="stylesheet" href="../css/moda.css">
 </head>
 
 <body>
-<header id="cabecera" class="encabezado">
-  <section class="sec-indice">
-    <a href="../index.html">Índice</a><br>
-  </section> 
-  <h1>Moda.</h1>
-  <h3>Debe agregar varios números para calcular valor Moda.</h3>
-</header><br>
-<div id="contenido">
-  <aside class="temario">
-    <h3>Contenidos</h3>
-    <ul>
-      <li><a href="../index.html">Índice</a></li>
-      <li><a href="../prueba-previaJS.html">Prueba previa</a></li><br>
-      <li>Taller 1
-        <ul>
-          <li><a href="../taller1/figuras.html">Figuras geométricas</a></li>
-          <li><a href="../taller1/isosceles.html">Triángulo isósceles</a></li>
-        </ul>
-      </li><br>
-      <li>Taller 2
-        <ul>
-          <li><a href="../taller2/descuentos.html">Descuentos</a></li>
-          <li><a href="../taller2/descuentos-con-cupon.html">Descuentos con cupón</a></li>
-        </ul>
-      </li><br>
-      <li>Taller 3
-        <ul>
-          <li><a href="../taller3/promedio.html">Promedio</a></li>
-          <li><a href="../taller3/mediana.html">Mediana</a></li>
-          <li><a href="../taller3/moda.html">Moda</a></li>
-        </ul>
-      </li><br>
-      <li>Taller 4
-        <ul>
-          <li><a href="../taller4/salarios.html">Salarios</a></li>
-        </ul>
-      </li>
-  </aside>
-  <main id="principal" class="main">
-    <section id="seccion-moda" class="seccion">
-      <h2>Agrega los elementos a la tabla "Números"</h2>
-      <form action="">
-      <div class="datos">
-      <label for="numero">Número:</label>
-      <input type="number" name="numero" id="numero" required />
-      </div>
-      <button type="button" onclick="agregarNumeroBtn()">Agregar</button>
-      <button type="button" onclick="modaBoton()">Calcular Moda.</button>
-    </form>
-    <div class="contenedor">
-      <p id="resultado">La Moda es:</p>
-    </div>
-    <table class="tabla" border=1 id="tabla-numeros">
-      <thead>
-        <tr>
-          <th>Números:</th>
-        </tr>
-      </thead>
-      <tbody id="tabla-body">
-        <!-- aqui debe ir un tr y un td-->
-      </tbody>
-    </table>
+  <header id="cabecera" class="encabezado">
+    <section class="sec-indice">
+      <a href="../index.html">Índice</a><br>
     </section>
-  </main>
-</div>
-<footer id="pie" class="pie">
-  <a href="#cabecera">Ir a Inicio</a></br><br>
-  <p>Gracias por su atención.</p>
-</footer>
+    <h1>Moda.</h1>
+    <h3>Debe agregar varios números para calcular valor Moda.</h3>
+  </header>
+  <div id="contenido">
+    <aside class="temario">
+      <h3>Contenidos</h3>
+      <ul>
+        <li><a href="../index.html">Índice</a></li>
+        <li><a href="../prueba-previaJS.html">Prueba previa</a></li><br>
+        <li>Taller 1
+          <ul>
+            <li><a href="../taller1/figuras.html">Figuras geométricas</a></li>
+            <li><a href="../taller1/isosceles.html">Triángulo isósceles</a></li>
+          </ul>
+        </li><br>
+        <li>Taller 2
+          <ul>
+            <li><a href="../taller2/descuentos.html">Descuentos</a></li>
+            <li><a href="../taller2/descuentos-con-cupon.html">Descuentos con cupón</a></li>
+          </ul>
+        </li><br>
+        <li>Taller 3
+          <ul>
+            <li><a href="../taller3/promedio.html">Promedio</a></li>
+            <li><a href="../taller3/mediana.html">Mediana</a></li>
+            <li><a href="../taller3/moda.html">Moda</a></li>
+          </ul>
+        </li><br>
+        <li>Taller 4
+          <ul>
+            <li><a href="../taller4/salarios.html">Salarios</a></li>
+          </ul>
+        </li>
+    </aside>
+    <main id="principal" class="main">
+      <section id="seccion-moda" class="seccion">
+        <h2>Agrega los elementos a la tabla "Números"</h2>
+        <form action="">
+          <div class="datos">
+            <label for="numero">Número:</label>
+            <input type="number" name="numero" id="numero" required />
+          </div>
+          <button type="button" onclick="agregarNumeroBtn()">Agregar</button>
+          <button type="button" onclick="modaBoton()">Calcular Moda.</button>
+        </form>
+        <div class="contenedor">
+          <p id="resultado">La Moda es:</p>
+        </div>
+        <table class="tabla" border=1 id="tabla-numeros">
+          <thead>
+            <tr>
+              <th>Números:</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-body">
+            <!-- aqui debe ir un tr y un td-->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+  <footer id="pie" class="pie">
+    <a href="#cabecera">Ir a Inicio</a></br><br>
+    <p>Gracias por su atención.</p>
+  </footer>
   <script type="text/javascript" src="./moda.js"></script>
 </body>
+
 </html>
