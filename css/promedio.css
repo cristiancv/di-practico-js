@@ -18,11 +18,11 @@ body {
   background-color: rgb(10, 66, 27);
   color: bisque;
   font-family: "fantasy, sans-serif";
-  line-height: 2.4rem;
+  line-height: 2.2rem;
 }
 .encabezado {
   text-align:center;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 10px;
     height: 25%;
 }
